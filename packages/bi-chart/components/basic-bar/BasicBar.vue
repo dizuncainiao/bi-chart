@@ -35,7 +35,9 @@ export default defineComponent({
 
 <style scoped lang="less">
 .chart-box {
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  min-height: 200px;
 }
 </style>

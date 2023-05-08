@@ -3,5 +3,7 @@ import { BasicBar } from 'dz-bi-chart'
 </script>
 
 <template>
-  <basic-bar />
+  <div style="width: 600px; height: 400px;">
+    <basic-bar />
+  </div>
 </template>
