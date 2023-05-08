@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BasicBar } from 'dz-bi-chart'
+import { BasicBar } from 'bi-chart'
 </script>
 
 <template>

@@ -1,11 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@utils/*": ["_utils/*"],
-      "@plugins/*": ["_plugins/*"],
-      "@hooks/*": ["_hooks/*"]
-    },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",

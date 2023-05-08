@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "dz-bi-chart": "workspace:^0.0.1",
+    "bi-chart": "workspace:^0.0.1",
     "vue": "^3.2.47"
   },
   "devDependencies": {

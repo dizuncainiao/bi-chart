@@ -1,5 +1,5 @@
 <template>
-  <v-chart class="chart-box" :option="state.options" autoresize />
+  <VChart class="chart-box" :option="state.options" autoresize />
 </template>
 
 <script lang="ts">
