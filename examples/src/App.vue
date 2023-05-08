@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import {BasicBar} from 'dz-bi-chart'
-
+import { BasicBar } from 'dz-bi-chart'
 </script>
 
 <template>
-    <basic-bar/>
+  <basic-bar />
 </template>
-
-<style scoped>
-</style>
