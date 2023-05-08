@@ -20,7 +20,9 @@ export default defineComponent({
 
     onMounted(() => {
       getData().then(res => {
-        console.log(res, 'line 23')
+        let optionCache = cloneDeep(chartOption)
+        optionCache.series[0].data = res.data || []
+        state.options = optionCache
       })
     })
 

@@ -1,89 +1,62 @@
 export const chartOption = {
+  color: [
+    '#0056FF',
+    '#2ED4A9',
+    '#242934',
+    '#FF7125',
+    '#FFC420',
+    '#F12525',
+    '#646B7A',
+    '#0056FF',
+    '#2ED4A9',
+    '#242934'
+  ],
   tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      // Use axis to trigger tooltip
-      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
-    }
+    trigger: 'item'
   },
-  grid: {
-    left: '3%',
-    right: '8%',
-    bottom: '2%',
-    top: '3%',
-    containLabel: true
-  },
-  xAxis: {
-    type: 'value'
-  },
-  yAxis: {
-    type: 'category',
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  legend: {
+    type: 'scroll',
+    orient: 'vertical',
+    align: 'left',
+    x: '65%',
+    y: 'center',
+    itemGap: 25,
+    icon: 'circle',
+    textStyle: {
+      color: 'rgba(156, 166, 185, 1)',
+      fontSize: '14px',
+      padding: [0, 0, 0, 5]
+    },
+    itemWidth: 6
   },
   series: [
     {
-      name: '外呼次数',
-      type: 'bar',
-      stack: 'total',
+      name: '外呼任务统计',
+      type: 'pie',
+      radius: ['60', '90'],
+      minAngle: 20,
+      center: ['30%', '52.5%'],
+      avoidLabelOverlap: false,
       label: {
-        show: true
+        show: false,
+        position: 'center'
       },
       emphasis: {
-        focus: 'series'
+        label: {
+          show: true,
+          fontSize: '16',
+          fontWeight: 'bold',
+          color: '#646B7A'
+        }
       },
-      data: [320, 302, 301, 334, 390, 330, 320]
-    },
-    {
-      name: '外呼接通次数',
-      type: 'bar',
-      stack: 'total',
-      label: {
-        show: true
+      labelLine: {
+        show: false
       },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: '通次评分',
-      type: 'bar',
-      stack: 'total',
-      label: {
-        show: true
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: '外呼总时长(分钟)',
-      type: 'bar',
-      stack: 'total',
-      label: {
-        show: true
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [150, 212, 201, 154, 190, 330, 410]
-    },
-    {
-      name: '通时评分',
-      type: 'bar',
-      stack: 'total',
-      label: {
-        show: true,
-        precision: 1,
-        position: 'right',
-        valueAnimation: true,
-        fontFamily: 'monospace'
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [820, 832, 901, 934, 555, 444, 222]
+      data: [
+        { name: '今日任务', value: 50 },
+        { name: '已完成任务', value: 50 },
+        { name: '过期任务', value: 50 }
+      ]
     }
   ]
 }
