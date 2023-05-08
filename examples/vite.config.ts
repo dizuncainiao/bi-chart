@@ -16,7 +16,8 @@ export default defineConfig(({ command, mode }) => {
           secure: true
         }
       },
-      open: true
+      open: true,
+      port: 5676
     }
   }
 })
