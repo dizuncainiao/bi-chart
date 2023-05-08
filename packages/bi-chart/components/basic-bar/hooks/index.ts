@@ -1,4 +1,4 @@
-import http from '../../../_plugins/axios-http/index.ts'
+import http from '../../../_plugins/axios-http'
 
 export const mineCallTaskStatistics = (params: any) =>
   http.postJson(

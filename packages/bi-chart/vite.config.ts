@@ -17,7 +17,7 @@ export default defineConfig({
         const keys = Object.keys(bundle)
 
         for (const key of keys) {
-          const bundler: any = bundle[key as any]
+          const bundler: any = bundle[key as string]
 
           this.emitFile({
             type: 'asset',
@@ -31,23 +31,31 @@ export default defineConfig({
   build: {
     target: 'modules',
     outDir: 'es',
-    minify: 'esbuild',
+    minify: true,
     rollupOptions: {
-      external: ['vue', /\.less/],
-      input: 'components/index.ts',
+      external: [
+        'vue',
+        'axios',
+        'qs',
+        // 'echarts',
+        'lodash-es',
+        // 'vue-echarts',
+        /\.less/
+      ],
+      input: 'index.ts',
       output: [
         {
           format: 'es',
           entryFileNames: '[name].js',
           preserveModules: true,
           // https://cn.rollupjs.org/configuration-options/#output-preservemodulesroot
-          preserveModulesRoot: 'components',
+          preserveModulesRoot: './',
           dir: resolve(__dirname, 'dist/es')
         }
       ]
     },
     lib: {
-      entry: resolve(__dirname, 'components/index.ts'),
+      entry: './index.ts',
       name: 'BiChart'
     }
   },
