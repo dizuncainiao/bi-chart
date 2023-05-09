@@ -8,8 +8,13 @@
       "import": "./dist/es/index.js",
       "types": "./dist/es/index.d.ts"
     },
-    "./dist/es/style.css": "./dist/es/style.css"
+    "./dist/es/style.css": "./dist/es/style.css",
+    "./style/index.css": "./style/index.css"
   },
+  "files": [
+    "style"
+  ],
+  "style": "style/index.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
