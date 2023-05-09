@@ -1,8 +1,8 @@
 {
   "name": "bi-chart",
   "version": "0.0.2",
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "dist/es/index.js",
+  "module": "dist/es/index.js",
   "exports": {
     ".": {
       "import": "./dist/es/index.js",
