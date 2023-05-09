@@ -7,7 +7,7 @@ export const mineCallTaskStatistics = (params: any) =>
     {
       headers: {
         Authorization:
-          'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzU0NDkzMn0.c2s0j7wF5RZTvZaIdkvyZc6AbRdDs8R_Mw3uhYk7hgtwO-nGKcrmRgk5bPtD_aZ8VjJ6Zu3DWju-Lnna9YijCQ'
+          'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzY1MTUwNX0.NurdUnvFq3iqJsDl4lFVedJcs0lZcCCEc1EKqLAicsgMWBZTIgLmvM9RJw4r-N2h8W4nwt3CjRsfZ4t2mfD7HQ'
       }
     }
   )
@@ -15,7 +15,7 @@ export const mineCallTaskStatistics = (params: any) =>
 export function getData() {
   return mineCallTaskStatistics({
     token:
-      'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzU0NDkzMn0.c2s0j7wF5RZTvZaIdkvyZc6AbRdDs8R_Mw3uhYk7hgtwO-nGKcrmRgk5bPtD_aZ8VjJ6Zu3DWju-Lnna9YijCQ',
+      'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzY1MTUwNX0.NurdUnvFq3iqJsDl4lFVedJcs0lZcCCEc1EKqLAicsgMWBZTIgLmvM9RJw4r-N2h8W4nwt3CjRsfZ4t2mfD7HQ',
     COMPANYID: '3263',
     companyId: '3263',
     endTime: '',

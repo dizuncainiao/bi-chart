@@ -5,8 +5,8 @@
   "module": "index.ts",
   "exports": {
     ".": {
-      "import": "./dist/es/index.js",
-      "types": "./dist/es/index.d.ts"
+      "import": "./index.js",
+      "types": "./index.d.ts"
     },
     "./dist/es/style.css": "./dist/es/style.css",
     "./style/index.css": "./style/index.css"
