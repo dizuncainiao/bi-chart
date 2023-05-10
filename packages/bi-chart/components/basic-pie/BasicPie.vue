@@ -11,7 +11,7 @@ import { cloneDeep } from 'lodash-es'
 import { getData } from './hooks'
 
 export default defineComponent({
-  name: 'BasicBar',
+  name: 'BasicPie',
   components: { VChart },
   setup() {
     const state = reactive({
