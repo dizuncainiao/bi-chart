@@ -2,19 +2,94 @@
   <div class="bi-chart-layout">
     <div class="bi-chart-header"></div>
     <div class="bi-chart-content">
-      <BasicPie />
-      <!--      <component is="BasicPie" :options="options"/>-->
+      <!--      <BasicPie />-->
+      <component :is="chartComps[$props.chartType]" :options="options" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import BasicPie from '../basic-chart/pie/BasicPie.vue'
+import {
+  defineComponent,
+  onMounted,
+  PropType,
+  ref,
+  toRefs,
+  computed
+} from 'vue'
+import BasicPie from '../basic-chart/basic-pie/BasicPie.vue'
+import echartsOptions from '../basic-chart/echarts-options'
+import { cloneDeep } from 'lodash-es'
+import http from '../../_plugins/axios-http'
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
-  components: { BasicPie }
+  components: { BasicPie },
+  props: {
+    // 图表类型（基础图表组件的 name 集合） 'BasicPie' |
+    chartType: {
+      type: String as PropType<string>,
+      required: true
+    },
+    // 请求地址
+    url: {
+      type: String as PropType<string>,
+      required: true
+    },
+    // 请求方式
+    method: {
+      type: String as PropType<'postJson'>,
+      default: 'postJson'
+    },
+    // 请求参数
+    params: {
+      type: Object as PropType<Record<string, unknown>>,
+      default: () => ({
+        token:
+          'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ',
+        COMPANYID: '3263',
+        companyId: '3263',
+        endTime: '',
+        profileId: '67098',
+        startTime: '',
+        type: '0',
+        pageNo: 0,
+        pageSize: 0
+      })
+    }
+  },
+  setup(props) {
+    const { url, chartType, method, params } = toRefs(props)
+    const options = ref()
+    const chartComps = computed(() => ({
+      BasicPie
+    }))
+
+    function initOptions() {
+      options.value = cloneDeep(echartsOptions[chartType.value])
+    }
+
+    function getData() {
+      http[method.value as 'postJson'](url.value, params.value, {
+        headers: {
+          Authorization:
+            'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ'
+        }
+      }).then(res => {
+        options.value.series[0].data = res.data || []
+      })
+    }
+
+    onMounted(() => {
+      initOptions()
+      getData()
+    })
+
+    return {
+      options,
+      chartComps
+    }
+  }
 })
 </script>
 

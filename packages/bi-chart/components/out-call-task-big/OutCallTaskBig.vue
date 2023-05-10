@@ -1,5 +1,8 @@
 <template>
-  <BasicBusinessLayout />
+  <BasicBusinessLayout
+    chart-type="BasicPie"
+    url="/bdcloud-call-analytic/call/callPhoneReport/mineCallTaskStatistics"
+  />
 </template>
 
 <script lang="ts">

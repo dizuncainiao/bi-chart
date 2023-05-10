@@ -1,4 +1,4 @@
-export const pieOptions = {
+export default {
   color: [
     '#0056FF',
     '#2ED4A9',
