@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { BasicPie } from 'bi-chart'
+import { OutCallTaskBig } from 'bi-chart'
 </script>
 
 <template>
   <div style="width: 600px; height: 400px;">
-    <basic-pie />
+    <OutCallTaskBig />
   </div>
 </template>
