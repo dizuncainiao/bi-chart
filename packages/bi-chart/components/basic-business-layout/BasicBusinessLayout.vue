@@ -1,6 +1,13 @@
 <template>
   <div class="bi-chart-layout">
-    <div class="bi-chart-header"></div>
+    <div class="bi-chart-header">
+      <div class="l-box">
+        <div class="title">{{ $props.title }}</div>
+        <div class="info">
+          <slot name="info"></slot>
+        </div>
+      </div>
+    </div>
     <div class="bi-chart-content">
       <!--      <BasicPie />-->
       <component :is="chart" :options="options" />
@@ -25,6 +32,9 @@ import { useChartComps } from '../basic-chart/chartComps'
 export default defineComponent({
   name: 'BasicBusinessLayout',
   props: {
+    title: {
+      type: String as PropType<string>
+    },
     // 图表类型（基础图表组件的 name 集合）
     chartType: {
       type: String as PropType<ChartType>,
@@ -60,12 +70,7 @@ export default defineComponent({
     const chart = computed(() => Reflect.get(unref(charts), unref(chartType)))
 
     function getData() {
-      http[method.value](url.value, params.value, {
-        // headers: {
-        //   Authorization:
-        //     'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ'
-        // }
-      }).then(res => {
+      http[method.value](url.value, params.value).then(res => {
         options.value.series[0].data = res.data || []
       })
     }
@@ -94,6 +99,25 @@ export default defineComponent({
     justify-content: space-between;
     height: 40px;
     margin-bottom: 20px;
+
+    .l-box {
+      text-align: left;
+
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        color: #242934;
+      }
+
+      .info {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #9ca6b9;
+      }
+    }
   }
 
   .bi-chart-content {
