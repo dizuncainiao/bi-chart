@@ -1,5 +1,6 @@
 import './_plugins/vue-echarts'
 import './style/index.css'
+import 'element-plus/es/components/select/style/css'
 
 // export { default as BasicBar } from './components/basic-bar'
 // export { default as BasicPie } from './components/basic-pie'

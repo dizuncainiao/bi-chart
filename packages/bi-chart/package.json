@@ -26,7 +26,8 @@
     "lodash-es": "^4.17.21",
     "qs": "^6.11.1",
     "vue": "^3.2.47",
-    "vue-echarts": "^6.5.5"
+    "vue-echarts": "^6.5.5",
+    "element-plus": "2.2.15"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -34,7 +35,8 @@
     "lodash-es": "^4.17.21",
     "qs": "^6.11.1",
     "vue": "^3.2.47",
-    "vue-echarts": "^6.5.5"
+    "vue-echarts": "^6.5.5",
+    "element-plus": "2.2.15"
   },
   "devDependencies": {
     "@types/qs": "latest",
