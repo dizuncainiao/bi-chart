@@ -1,6 +1,8 @@
 import AxiosHttp from './http'
 
-export default new AxiosHttp({
+const http = new AxiosHttp({
   baseURL: '',
   timeout: 60 * 1000
 })
+
+export default http
