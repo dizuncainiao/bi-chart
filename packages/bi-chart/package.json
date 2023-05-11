@@ -1,15 +1,14 @@
 {
   "name": "bi-chart",
   "version": "0.0.2",
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "dist/es/index.js",
+  "module": "dist/es/index.js",
   "exports": {
     ".": {
-      "import": "./index.js",
-      "types": "./index.d.ts"
+      "import": "./dist/es/index.js",
+      "types": "./dist/es/index.d.ts"
     },
-    "./dist/es/style.css": "./dist/es/style.css",
-    "./style/index.css": "./style/index.css"
+    "./dist/es/style.css": "./dist/es/style.css"
   },
   "files": [
     "style"
