@@ -146,47 +146,47 @@ export default defineComponent({
 })
 </script>
 
-<style lang="less">
-.bi-chart-layout {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding: 28px;
+<!--<style lang="less">-->
+<!--.bi-chart-layout {-->
+<!--  box-sizing: border-box;-->
+<!--  width: 100%;-->
+<!--  height: 100%;-->
+<!--  padding: 28px;-->
 
-  .bi-chart-header {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    margin-bottom: 20px;
+<!--  .bi-chart-header {-->
+<!--    display: flex;-->
+<!--    justify-content: space-between;-->
+<!--    height: 40px;-->
+<!--    margin-bottom: 20px;-->
 
-    .l-box {
-      text-align: left;
+<!--    .l-box {-->
+<!--      text-align: left;-->
 
-      .title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 16px;
-        color: #242934;
-      }
+<!--      .title {-->
+<!--        font-size: 16px;-->
+<!--        font-weight: 600;-->
+<!--        line-height: 16px;-->
+<!--        color: #242934;-->
+<!--      }-->
 
-      .info {
-        margin-top: 10px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 14px;
-        color: #9ca6b9;
-      }
-    }
+<!--      .info {-->
+<!--        margin-top: 10px;-->
+<!--        font-size: 14px;-->
+<!--        font-weight: 400;-->
+<!--        line-height: 14px;-->
+<!--        color: #9ca6b9;-->
+<!--      }-->
+<!--    }-->
 
-    .r-box {
-      display: flex;
-      gap: 8px;
-      margin-top: -4px;
-    }
-  }
+<!--    .r-box {-->
+<!--      display: flex;-->
+<!--      gap: 8px;-->
+<!--      margin-top: -4px;-->
+<!--    }-->
+<!--  }-->
 
-  .bi-chart-content {
-    height: calc(100% - 60px);
-  }
-}
-</style>
+<!--  .bi-chart-content {-->
+<!--    height: calc(100% - 60px);-->
+<!--  }-->
+<!--}-->
+<!--</style>-->

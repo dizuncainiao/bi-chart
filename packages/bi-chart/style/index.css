@@ -12,13 +12,38 @@
   padding: 28px;
 }
 
-.bi-chart-header {
+.bi-chart-layout .bi-chart-header {
   display: flex;
   justify-content: space-between;
   height: 40px;
   margin-bottom: 20px;
 }
 
-.bi-chart-content {
-  height: calc(100% - 60px);
+.bi-chart-layout .bi-chart-header .l-box {
+  text-align: left;
+}
+
+.bi-chart-layout .bi-chart-header .l-box .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #242934;
+}
+
+.bi-chart-layout .bi-chart-header .l-box .info {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #9ca6b9;
+}
+
+.bi-chart-layout .bi-chart-header .r-box {
+  display: flex;
+  gap: 8px;
+  margin-top: -4px;
+}
+
+.bi-chart-layout .bi-chart-content {
+  height: calc(40%);
 }
