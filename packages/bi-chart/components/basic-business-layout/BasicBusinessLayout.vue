@@ -9,26 +9,17 @@
 </template>
 
 <script lang="ts">
-import {
-  defineComponent,
-  onMounted,
-  PropType,
-  ref,
-  toRefs,
-  computed
-} from 'vue'
-import BasicPie from '../basic-chart/basic-pie/BasicPie.vue'
-import echartsOptions from '../basic-chart/echarts-options'
-import { cloneDeep } from 'lodash-es'
+import { defineComponent, onMounted, ref, toRefs, PropType } from 'vue'
+import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
+import { useChartComps } from './hooks/chartComps'
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
-  components: { BasicPie },
   props: {
-    // 图表类型（基础图表组件的 name 集合） 'BasicPie' |
+    // 图表类型（基础图表组件的 name 集合）
     chartType: {
-      type: String as PropType<string>,
+      type: String as PropType<ChartType>,
       required: true
     },
     // 请求地址
@@ -61,16 +52,14 @@ export default defineComponent({
   setup(props) {
     const { url, chartType, method, params } = toRefs(props)
     const options = ref()
-    const chartComps = computed(() => ({
-      BasicPie
-    }))
+    const chartComps = useChartComps()
 
     function initOptions() {
-      options.value = cloneDeep(echartsOptions[chartType.value])
+      options.value = getChartOption(chartType.value)
     }
 
     function getData() {
-      http[method.value as 'postJson'](url.value, params.value, {
+      http[method.value](url.value, params.value, {
         headers: {
           Authorization:
             'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ'
