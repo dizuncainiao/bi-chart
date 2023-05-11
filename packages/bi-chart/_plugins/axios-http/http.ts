@@ -1,4 +1,8 @@
-import axios, { AxiosRequestConfig, AxiosInstance } from 'axios'
+import axios, {
+  AxiosRequestConfig,
+  AxiosInstance,
+  InternalAxiosRequestConfig
+} from 'axios'
 import { CreateAxiosDefaults } from 'axios'
 import qs from 'qs'
 
@@ -8,6 +12,10 @@ type ResponseDataWrapper<T = any> = {
   msg: string
 }
 
+export type RequestInterceptors = (
+  args: InternalAxiosRequestConfig
+) => InternalAxiosRequestConfig
+
 export default class AxiosHttp {
   private readonly axiosInstance: AxiosInstance
 
@@ -16,15 +24,27 @@ export default class AxiosHttp {
     this.initInterceptors()
   }
 
-  initInterceptors() {
+  // 暴露给外部的请求拦截器
+  requestInterceptors(callback: RequestInterceptors) {
     this.axiosInstance.interceptors.request.use(
       config => {
-        return config
+        return callback(config)
       },
       error => {
         return Promise.reject(error)
       }
     )
+  }
+
+  private initInterceptors() {
+    // this.axiosInstance.interceptors.request.use(
+    //   config => {
+    //     return config
+    //   },
+    //   error => {
+    //     return Promise.reject(error)
+    //   }
+    // )
 
     this.axiosInstance.interceptors.response.use(config => {
       // 状态 200 且 data 正常有值

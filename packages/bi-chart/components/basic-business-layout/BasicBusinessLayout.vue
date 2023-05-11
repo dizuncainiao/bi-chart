@@ -44,10 +44,6 @@ export default defineComponent({
     params: {
       type: Object as PropType<Record<string, unknown>>,
       default: () => ({
-        token:
-          'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ',
-        COMPANYID: '3263',
-        companyId: '3263',
         endTime: '',
         profileId: '67098',
         startTime: '',
@@ -65,10 +61,10 @@ export default defineComponent({
 
     function getData() {
       http[method.value](url.value, params.value, {
-        headers: {
-          Authorization:
-            'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ'
-        }
+        // headers: {
+        //   Authorization:
+        //     'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4MzczMjY4N30.6lCwxodyJIRGArFZeIfP-v-6DrCX7XPJFmX113Vr6E9Px0S-xPb0TpWeZivff5HlqMHhXAWo4KxIfjg8WyK7BQ'
+        // }
       }).then(res => {
         options.value.series[0].data = res.data || []
       })
