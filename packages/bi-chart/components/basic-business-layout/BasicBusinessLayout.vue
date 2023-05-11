@@ -3,16 +3,24 @@
     <div class="bi-chart-header"></div>
     <div class="bi-chart-content">
       <!--      <BasicPie />-->
-      <component :is="chartComps[$props.chartType]" :options="options" />
+      <component :is="chart" :options="options" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, toRefs, PropType } from 'vue'
+import {
+  defineComponent,
+  onMounted,
+  ref,
+  toRefs,
+  PropType,
+  computed,
+  unref
+} from 'vue'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
-import { useChartComps } from './hooks/chartComps'
+import { useChartComps } from '../basic-chart/chartComps'
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
@@ -51,12 +59,9 @@ export default defineComponent({
   },
   setup(props) {
     const { url, chartType, method, params } = toRefs(props)
-    const options = ref()
-    const chartComps = useChartComps()
-
-    function initOptions() {
-      options.value = getChartOption(chartType.value)
-    }
+    const options = getChartOption(unref(chartType))
+    const charts = useChartComps()
+    const chart = computed(() => Reflect.get(unref(charts), unref(chartType)))
 
     function getData() {
       http[method.value](url.value, params.value, {
@@ -70,13 +75,12 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      initOptions()
       getData()
     })
 
     return {
       options,
-      chartComps
+      chart
     }
   }
 })
