@@ -21,12 +21,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, toRefs, PropType, unref } from 'vue'
+import { defineComponent, onMounted, toRefs, PropType, unref, Ref } from 'vue'
 import { ElConfigProvider } from 'element-plus'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
 import BasicChart from '../basic-chart/BasicChart.vue'
 import { locale } from './hooks/locale'
+
+type SetOption = (data: any, option: any) => void
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
@@ -57,6 +59,11 @@ export default defineComponent({
     params: {
       type: Object as PropType<Record<string, unknown>>,
       default: () => ({})
+    },
+    // 设置图表 option 方法
+    setOption: {
+      type: Function as PropType<SetOption>,
+      required: true
     }
   },
   setup(props) {
@@ -64,9 +71,13 @@ export default defineComponent({
     const chartOptions = getChartOption(unref(chartType))
 
     function getData() {
-      http[method.value](url.value, params.value).then(res => {
-        chartOptions.value.series[0].data = res.data || []
-      })
+      http[method.value](url.value, params.value)
+        .then(res => {
+          props.setOption(res.data, chartOptions.value)
+        })
+        .catch(err => {
+          console.error(`ChartError: Error in '${url.value}',\n ${err}`)
+        })
     }
 
     onMounted(() => {

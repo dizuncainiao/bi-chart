@@ -4,6 +4,7 @@
     chart-type="basicBar"
     url="/bdcloud-call-analytic/call/callPhoneReport/callTimesRankStatistics"
     :params="params"
+    :set-option="setOption"
   >
     <template #info>2023-05-11 | 我的</template>
     <template #form>
@@ -15,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref } from 'vue'
+import { defineComponent, ref } from 'vue'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 import DepSelect from '../../basic-business/dep-select/DepSelect.vue'
 import DateSelect from '../../basic-business/date-select/DateSelect.vue'
@@ -38,8 +39,14 @@ export default defineComponent({
       startTime: '2023-05-11'
     })
 
+    function setOption(data, option) {
+      option.yAxis.data = data?.xaxisList || []
+      option.series[0].data = data?.callTimesList || []
+    }
+
     return {
-      params
+      params,
+      setOption
     }
   }
 })
