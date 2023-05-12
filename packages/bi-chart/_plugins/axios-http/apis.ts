@@ -12,5 +12,5 @@ type DepList = {
   innerDep: DepInfo[]
 }
 
-export const getDepartmentList = (params: any) =>
+export const getDepartmentList = (params: any = {}) =>
   http.postForm<DepList>('/bdsaas/ajax/user/getDepartmentList.do', params)

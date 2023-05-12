@@ -5,23 +5,9 @@
     url="/bdcloud-call-analytic/call/callPhoneReport/callTimesRankStatistics"
     :params="params"
   >
-    <template #info>2023-05-11 | 全部</template>
+    <template #info>{{ params }}</template>
     <template #form>
-      <el-select
-        style="width: 124px;"
-        v-model="state.cdId"
-        :teleported="false"
-        placeholder="选择部门"
-        size="small"
-        @change="depChange"
-      >
-        <el-option
-          v-for="item of state.depListData"
-          :key="item.id"
-          :label="item.name"
-          :value="item.id"
-        />
-      </el-select>
+      <DepSelect v-model:params="params" />
 
       <el-select
         style="width: 80px;"
@@ -42,15 +28,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from 'vue'
-import BasicBusinessLayout from '../../basic-business-component/BasicBusinessLayout.vue'
+import { defineComponent, reactive, ref } from 'vue'
+import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 import { DepInfo, getDepartmentList } from '../../../_plugins/axios-http/apis'
-import { OptionDataKeys } from '../../basic-business-component/hooks'
+import { OptionDataKeys } from '../../basic-business/hooks'
 import { ElOption, ElSelect } from 'element-plus'
+import DepSelect from '../../basic-business/dep-select/DepSelect.vue'
 
 export default defineComponent({
   name: 'OutCallNumRankBig',
   components: {
+    DepSelect,
     BasicBusinessLayout,
     ElSelect,
     ElOption
@@ -66,8 +54,8 @@ export default defineComponent({
       cdId: ''
     })
 
-    const params = reactive({
-      cdId: 0,
+    const params = ref({
+      cdId: '',
       companyId: '6509',
       endTime: '2023-05-12',
       pageNo: 1,

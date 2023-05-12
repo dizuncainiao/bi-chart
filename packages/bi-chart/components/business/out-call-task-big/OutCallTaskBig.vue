@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BasicBusinessLayout from '../../basic-business-component/BasicBusinessLayout.vue'
+import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 
 export default defineComponent({
   name: 'OutCallTaskBig',
