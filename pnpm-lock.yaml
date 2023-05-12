@@ -90,6 +90,7 @@ importers:
       '@types/qs': latest
       '@vitejs/plugin-vue': ^4.2.1
       axios: ^1.4.0
+      dayjs: ^1.11.5
       echarts: ^5.4.2
       element-plus: 2.2.15
       less: ^4.1.3
@@ -103,6 +104,7 @@ importers:
       vue-tsc: ^1.6.4
     dependencies:
       axios: 1.4.0
+      dayjs: 1.11.7
       echarts: 5.4.2
       element-plus: 2.2.15_vue@3.2.47
       lodash-es: 4.17.21
