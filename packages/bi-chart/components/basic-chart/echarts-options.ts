@@ -1,10 +1,6 @@
-import BasicPie from './basic-pie/chartOptions'
 import { cloneDeep } from 'lodash-es'
-import { Ref, ref } from 'vue'
-
-const allEchartsOptions = {
-  BasicPie
-}
+import { ref } from 'vue'
+import * as allEchartsOptions from './chart-option'
 
 export type AllChartOptions = typeof allEchartsOptions
 

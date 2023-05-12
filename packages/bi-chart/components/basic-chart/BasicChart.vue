@@ -4,28 +4,17 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { reactive } from 'vue'
-import { cloneDeep } from 'lodash-es'
 import VChart from 'vue-echarts'
-import pieOptions from './chartOptions'
 
 export default defineComponent({
-  name: 'BasicPie',
+  name: 'BasicChart',
   components: { VChart },
   props: {
     options: {
       type: Object as PropType<any>,
-      default: () => cloneDeep(pieOptions)
+      required: true
     }
   },
-  setup() {
-    // const state = reactive({
-    //   options: cloneDeep(pieOptions)
-    // })
-    //
-    // return {
-    //   state
-    // }
-  }
+  setup() {}
 })
 </script>

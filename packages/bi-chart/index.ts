@@ -2,9 +2,9 @@ import './_plugins/vue-echarts'
 import './style/index.css'
 import 'element-plus/es/components/select/style/css'
 
-// export { default as BasicBar } from './components/basic-bar'
-// export { default as BasicPie } from './components/basic-pie'
+// 业务组件
 export { default as OutCallTaskBig } from './components/out-call-task-big'
+// 基础服务组件
 export { default as BasicBusinessLayout } from './components/basic-business-layout'
 
 // 请求拦截器

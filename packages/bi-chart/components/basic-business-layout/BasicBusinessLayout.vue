@@ -41,29 +41,22 @@
       </div>
     </div>
     <div class="bi-chart-content">
-      <component :is="chart" :options="chartOptions" />
+      <BasicChart :options="chartOptions" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import {
-  defineComponent,
-  onMounted,
-  ref,
-  toRefs,
-  PropType,
-  computed,
-  unref
-} from 'vue'
+import { defineComponent, onMounted, ref, toRefs, PropType, unref } from 'vue'
 import { ElSelect, ElOption } from 'element-plus'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
-import { useChartComps } from '../basic-chart/chartComps'
+import BasicChart from '../basic-chart/BasicChart.vue'
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
   components: {
+    BasicChart,
     ElSelect,
     ElOption
   },
@@ -102,8 +95,6 @@ export default defineComponent({
   setup(props) {
     const { url, chartType, method, params } = toRefs(props)
     const chartOptions = getChartOption(unref(chartType))
-    const charts = useChartComps()
-    const chart = computed(() => Reflect.get(unref(charts), unref(chartType)))
 
     function getData() {
       http[method.value](url.value, params.value).then(res => {
@@ -117,7 +108,6 @@ export default defineComponent({
 
     return {
       chartOptions,
-      chart,
       value: ref(''),
       options: [
         {

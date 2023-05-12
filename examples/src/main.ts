@@ -5,7 +5,7 @@ import 'bi-chart/style/index.css'
 import { initRequestInterceptors } from 'bi-chart'
 
 function getToken() {
-  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4Mzc5ODU5MH0.azt8JcpjhLMZHNBDrXAoVyVFyNIZts08mdaY37m6tsaU0QaVG0HSk8ihOFsbRw_18XPVn7P24SMJmA4B66SAGQ'
+  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4Mzg4MjU2NX0.TWj-A1OMmN2gtvg3jk-Lj96APqIrqxPbxdqi74N5gIpwsk69nQGDJDV3i2Nb5obhqSyIxAu6b2S3sXi4V0uKnw'
 }
 
 initRequestInterceptors(config => {
