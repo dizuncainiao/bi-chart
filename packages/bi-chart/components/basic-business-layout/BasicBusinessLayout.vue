@@ -61,6 +61,7 @@ import { ElSelect, ElOption, ElConfigProvider } from 'element-plus'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
 import BasicChart from '../basic-chart/BasicChart.vue'
+import { DepInfo, getDepartmentList } from '../../_plugins/axios-http/apis'
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
@@ -107,8 +108,8 @@ export default defineComponent({
     const chartOptions = getChartOption(unref(chartType))
     const state = reactive<{
       date: string
-      depListData: any[]
-      cdId: number
+      depListData: DepInfo[]
+      cdId: number | string
     }>({
       date: '1',
       depListData: [],
@@ -120,6 +121,26 @@ export default defineComponent({
         chartOptions.value.series[0].data = res.data || []
       })
     }
+
+    getDepartmentList({}).then(res => {
+      const depList = res?.data?.innerDep || []
+
+      depList.forEach(item => {
+        item.id = Math.abs(item.id)
+      })
+
+      // 获取最顶层组件架构
+      const topLevelIndex = depList.findIndex((item: any) => item.pId == 0)
+
+      if (topLevelIndex > -1) {
+        depList[topLevelIndex].name = '全部'
+        depList[topLevelIndex].id = 0
+      }
+
+      state.depListData = depList
+      state.cdId = depList[0]?.id || ''
+      console.log(res?.data?.innerDep, 'line 126 126 126 126 126 126 126 126')
+    })
 
     onMounted(() => {
       getData()

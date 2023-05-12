@@ -14,6 +14,11 @@ export default defineConfig(({ command, mode }) => {
           target: VITE_HOST,
           changeOrigin: true,
           secure: true
+        },
+        '/bdsaas': {
+          target: VITE_HOST,
+          changeOrigin: true,
+          secure: true
         }
       },
       open: true,
