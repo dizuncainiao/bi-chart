@@ -42,6 +42,9 @@
   display: flex;
   gap: 8px;
   margin-top: -4px;
+  text-align: left;
+
+  --el-component-size-small: 28px;
 }
 
 .bi-chart-layout .bi-chart-content {

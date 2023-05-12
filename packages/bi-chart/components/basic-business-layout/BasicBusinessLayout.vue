@@ -1,54 +1,63 @@
 <template>
-  <div class="bi-chart-layout">
-    <div class="bi-chart-header">
-      <div class="l-box">
-        <div class="title">{{ $props.title }}</div>
-        <div class="info">
-          <slot name="info"></slot>
+  <ElConfigProvider :locale="locale">
+    <div class="bi-chart-layout">
+      <div class="bi-chart-header">
+        <div class="l-box">
+          <div class="title">{{ $props.title }}</div>
+          <div class="info">
+            <slot name="info"></slot>
+          </div>
+        </div>
+
+        <div class="r-box">
+          <el-select
+            style="width: 124px;"
+            v-model="state.cdId"
+            :teleported="false"
+            placeholder="选择部门"
+            size="small"
+          >
+            <el-option
+              v-for="item of state.depListData"
+              :key="item.id"
+              :label="item.name"
+              :value="item.id"
+            />
+          </el-select>
+
+          <el-select
+            style="width: 80px;"
+            v-model="state.date"
+            :teleported="false"
+            placeholder="选择时间"
+            size="small"
+          >
+            <el-option label="昨日" value="1" />
+            <el-option label="近7天" value="2" />
+            <el-option label="本周" value="3" />
+            <el-option label="近30天" value="4" />
+            <el-option label="本月" value="5" />
+          </el-select>
         </div>
       </div>
-
-      <div class="r-box" style="
-
-  --el-component-size-small: 28px;">
-        <el-select
-          style="width: 124px;"
-          v-model="value"
-          placeholder="Select"
-          size="small"
-        >
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value as any"
-          />
-        </el-select>
-
-        <el-select
-          style="width: 80px;"
-          v-model="value"
-          placeholder="Select"
-          size="small"
-        >
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value as any"
-          />
-        </el-select>
+      <div class="bi-chart-content">
+        <BasicChart :options="chartOptions" />
       </div>
     </div>
-    <div class="bi-chart-content">
-      <BasicChart :options="chartOptions" />
-    </div>
-  </div>
+  </ElConfigProvider>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, toRefs, PropType, unref } from 'vue'
-import { ElSelect, ElOption } from 'element-plus'
+import {
+  defineComponent,
+  onMounted,
+  ref,
+  toRefs,
+  PropType,
+  unref,
+  reactive
+} from 'vue'
+import { ElSelect, ElOption, ElConfigProvider } from 'element-plus'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
 import BasicChart from '../basic-chart/BasicChart.vue'
@@ -58,7 +67,8 @@ export default defineComponent({
   components: {
     BasicChart,
     ElSelect,
-    ElOption
+    ElOption,
+    ElConfigProvider
   },
   props: {
     title: {
@@ -95,6 +105,15 @@ export default defineComponent({
   setup(props) {
     const { url, chartType, method, params } = toRefs(props)
     const chartOptions = getChartOption(unref(chartType))
+    const state = reactive<{
+      date: string
+      depListData: any[]
+      cdId: number
+    }>({
+      date: '1',
+      depListData: [],
+      cdId: 0
+    })
 
     function getData() {
       http[method.value](url.value, params.value).then(res => {
@@ -109,28 +128,18 @@ export default defineComponent({
     return {
       chartOptions,
       value: ref(''),
-      options: [
-        {
-          value: 'Option1',
-          label: 'Option1'
-        },
-        {
-          value: 'Option2',
-          label: 'Option2'
-        },
-        {
-          value: 'Option3',
-          label: 'Option3'
-        },
-        {
-          value: 'Option4',
-          label: 'Option4'
-        },
-        {
-          value: 'Option5',
-          label: 'Option5'
+      state,
+      locale: {
+        name: 'zh-cn',
+        el: {
+          select: {
+            loading: '\u52A0\u8F7D\u4E2D',
+            noMatch: '\u65E0\u5339\u914D\u6570\u636E',
+            noData: '\u65E0\u6570\u636E',
+            placeholder: '\u8BF7\u9009\u62E9'
+          }
         }
-      ]
+      }
     }
   }
 })
