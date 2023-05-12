@@ -6,7 +6,7 @@
     :params="params"
     :set-option="setOption"
   >
-    <template #info>2023-05-11 | 我的</template>
+    <template #info>{{ dateText }} | 我的</template>
     <template #form>
       <DepSelect v-model:params="params" />
 
@@ -16,10 +16,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { computed, defineComponent, ref } from 'vue'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 import DepSelect from '../../basic-business/dep-select/DepSelect.vue'
 import DateSelect from '../../basic-business/date-select/DateSelect.vue'
+import { getDateText } from '../../basic-business/hooks/date'
 
 export default defineComponent({
   name: 'OutCallNumRankBig',
@@ -44,9 +45,13 @@ export default defineComponent({
       option.series[0].data = data?.callTimesList || []
     }
 
+    const dateText = computed(() => getDateText(params.value))
+
     return {
       params,
-      setOption
+      dateText,
+      setOption,
+      getDateText
     }
   }
 })

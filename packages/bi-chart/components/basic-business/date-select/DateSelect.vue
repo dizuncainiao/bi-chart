@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType, reactive } from 'vue'
-import { OptionDataKeys, optionDate } from './index'
+import { OptionDataKeys, optionDate, today, yesterday } from '../hooks/date'
 import dayjs from 'dayjs'
 import { ElOption, ElSelect } from 'element-plus'
 
@@ -41,8 +41,8 @@ export default defineComponent({
       endTime: string
     }>({
       date: '1',
-      startTime: dayjs().subtract(1, 'day').format('YYYY-MM-DD'),
-      endTime: dayjs().format('YYYY-MM-DD')
+      startTime: yesterday,
+      endTime: today
     })
 
     function dateChange(val: OptionDataKeys) {

@@ -6,13 +6,14 @@
     :params="params"
     :set-option="setOption"
   >
-    <template #info>2023-05-11 | 我的</template>
+    <template #info>{{ dateText }} | 我的</template>
   </BasicBusinessLayout>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, computed } from 'vue'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
+import { getDateText } from '../../basic-business/hooks/date'
 
 export default defineComponent({
   name: 'OutCallTaskBig',
@@ -25,12 +26,16 @@ export default defineComponent({
       pageSize: 0
     })
 
+    const dateText = computed(() => getDateText(params.value))
+
     function setOption(data, option) {
       option.series[0].data = data || []
     }
 
     return {
       params,
+      dateText,
+      getDateText,
       setOption
     }
   }
