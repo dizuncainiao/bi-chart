@@ -113,7 +113,7 @@ export default defineComponent({
     }>({
       date: '1',
       depListData: [],
-      cdId: 0
+      cdId: ''
     })
 
     function getData() {
@@ -127,6 +127,7 @@ export default defineComponent({
 
       depList.forEach(item => {
         item.id = Math.abs(item.id)
+        item.pId = Math.abs(item.pId)
       })
 
       // 获取最顶层组件架构
@@ -138,8 +139,7 @@ export default defineComponent({
       }
 
       state.depListData = depList
-      state.cdId = depList[0]?.id || ''
-      console.log(res?.data?.innerDep, 'line 126 126 126 126 126 126 126 126')
+      state.cdId = depList[0]?.id ?? ''
     })
 
     onMounted(() => {
