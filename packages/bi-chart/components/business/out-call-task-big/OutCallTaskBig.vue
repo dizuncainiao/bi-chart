@@ -4,26 +4,34 @@
     chart-type="basicPie"
     url="/bdcloud-call-analytic/call/callPhoneReport/mineCallTaskStatistics"
     :params="params"
+    :set-option="setOption"
   >
     <template #info>2023-05-11 | 我的</template>
   </BasicBusinessLayout>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 
 export default defineComponent({
   name: 'OutCallTaskBig',
   components: { BasicBusinessLayout },
   setup() {
+    const params = ref({
+      profileId: '67098',
+      type: '0',
+      pageNo: 0,
+      pageSize: 0
+    })
+
+    function setOption(data, option) {
+      option.series[0].data = data || []
+    }
+
     return {
-      params: {
-        profileId: '67098',
-        type: '0',
-        pageNo: 0,
-        pageSize: 0
-      }
+      params,
+      setOption
     }
   }
 })
