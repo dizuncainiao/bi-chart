@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, toRefs, PropType, unref, Ref } from 'vue'
+import { defineComponent, onMounted, toRefs, PropType, unref, watch } from 'vue'
 import { ElConfigProvider } from 'element-plus'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
@@ -79,6 +79,13 @@ export default defineComponent({
           console.error(`ChartError: Error in '${url.value}',\n ${err}`)
         })
     }
+
+    watch(
+      () => props.params,
+      () => {
+        getData()
+      }
+    )
 
     onMounted(() => {
       getData()
