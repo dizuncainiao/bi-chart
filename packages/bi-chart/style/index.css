@@ -45,5 +45,5 @@
 }
 
 .bi-chart-layout .bi-chart-content {
-  height: calc(40%);
+  height: calc(100% - 60px);
 }
