@@ -2,7 +2,7 @@
   <BasicBusinessLayout
     title="外呼接通次数排行榜"
     chart-type="basicBar"
-    url="/associate-web/callReport/callConnectedRateRankStatistics"
+    url="/associate-web/callReport/callConnectedTimesRankStatistics"
     :params="params"
     :set-option="setOption"
   >
