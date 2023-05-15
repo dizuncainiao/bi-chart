@@ -37,20 +37,20 @@ export default defineComponent({
   setup(props, { emit }) {
     const state = reactive<{
       date: string
-      startTime: string
-      endTime: string
+      startDate: string
+      endDate: string
     }>({
       date: '1',
-      startTime: yesterday,
-      endTime: today
+      startDate: yesterday,
+      endDate: today
     })
 
     function dateChange(val: OptionDataKeys) {
-      state.startTime = optionDate[val]
+      state.startDate = optionDate[val]
       emit('update:params', {
         ...props.params,
-        startTime: state.startTime,
-        endTime: state.endTime
+        startDate: state.startDate,
+        endDate: state.endDate
       })
     }
 

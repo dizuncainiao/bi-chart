@@ -33,7 +33,7 @@ export default defineComponent({
       required: true
     }
   },
-  emits: ['update:params'],
+  emits: ['update:params', 'change'],
   setup(props, { emit }) {
     const state = reactive<{
       depListData: DepInfo[]
@@ -67,7 +67,8 @@ export default defineComponent({
     function depChange(val: number) {
       emit('update:params', {
         ...props.params,
-        cdId: val
+        cdId: val,
+        depName: state.depListData.find(item => item.id === val).name
       })
     }
 

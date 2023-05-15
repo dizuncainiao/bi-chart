@@ -15,6 +15,11 @@ export default defineConfig(({ command, mode }) => {
           changeOrigin: true,
           secure: true
         },
+        '/associate-web': {
+          target: 'http://192.168.21.67:7071/',
+          changeOrigin: true,
+          secure: true
+        },
         '/bdsaas': {
           target: VITE_HOST,
           changeOrigin: true,

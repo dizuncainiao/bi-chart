@@ -5,11 +5,11 @@ import 'bi-chart/style/index.css'
 import { initRequestInterceptors } from 'bi-chart'
 
 function getToken() {
-  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiI2NzA5OCIsImV4cCI6MTY4Mzg4MjU2NX0.TWj-A1OMmN2gtvg3jk-Lj96APqIrqxPbxdqi74N5gIpwsk69nQGDJDV3i2Nb5obhqSyIxAu6b2S3sXi4V0uKnw'
+  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiIyNzk3IiwiZXhwIjoxNjg0MTUwMzk4fQ.DUBftrV44tYq6YNg5plVGTpOVAdfCU8CGGqEnCP_5-VHSJD-f1M1aOZRXIsh1zZG_i6xhxG9cmeCG_DLS3hvRw'
 }
 
 function getCompanyId() {
-  return 6509
+  return 704
 }
 
 initRequestInterceptors(config => {
