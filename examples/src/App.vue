@@ -3,7 +3,9 @@ import {
   OutCallTaskBig,
   OutCallNumRankBig,
   BasicSmallLayout,
-  ThingsOutboundNumberRanking
+  ThingsOutboundNumberRanking,
+  ThingsOutboundConnectionRateRanking,
+  ThingsOutboundConnectionNumberRanking
 } from 'bi-chart'
 </script>
 
@@ -20,5 +22,11 @@ import {
 
   <div style="width: 600px; height: 400px;">
     <ThingsOutboundNumberRanking />
+  </div>
+  <div style="width: 600px; height: 400px;">
+    <ThingsOutboundConnectionRateRanking />
+  </div>
+  <div style="width: 600px; height: 400px;">
+    <ThingsOutboundConnectionNumberRanking />
   </div>
 </template>
