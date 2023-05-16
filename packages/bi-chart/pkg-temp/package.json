@@ -1,5 +1,5 @@
 {
-  "name": "bi-chart",
+  "name": "dz-bi-chart",
   "version": "0.0.2",
   "main": "dist/es/index.js",
   "module": "dist/es/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "bi-chart",
+  "name": "dz-bi-chart",
   "version": "0.0.2",
   "main": "index.ts",
   "module": "index.ts",
