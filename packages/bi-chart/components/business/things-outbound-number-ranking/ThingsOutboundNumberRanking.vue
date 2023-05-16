@@ -32,7 +32,7 @@ export default defineComponent({
       pageNo: 0,
       pageSize: 0,
       startDate: '',
-      depName: ''
+      depName: '' // 用于显示 info 数据，传为接口参数不用管
     })
 
     const dateText = computed(() => getDateText(params.value))

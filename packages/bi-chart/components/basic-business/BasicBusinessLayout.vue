@@ -87,10 +87,6 @@ export default defineComponent({
       }
     )
 
-    onMounted(() => {
-      getData()
-    })
-
     return {
       chartOptions,
       locale

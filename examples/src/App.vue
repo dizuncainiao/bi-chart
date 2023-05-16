@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import {
-  OutCallTaskBig,
-  OutCallNumRankBig,
   BasicSmallLayout,
   ThingsOutboundNumberRanking,
   ThingsOutboundConnectionRateRanking,
@@ -10,23 +8,23 @@ import {
 </script>
 
 <template>
-  <!--  <div style="width: 600px; height: 400px;">-->
-  <!--    <OutCallTaskBig />-->
-  <!--  </div>-->
+  <BasicSmallLayout
+    style="box-shadow: 0 0 8px #eee;"
+    title="今日外呼任务数"
+    value="800"
+    unit="次"
+    type="我的"
+  />
 
-  <!--  <div style="width: 600px; height: 400px;">-->
-  <!--    <OutCallNumRankBig />-->
-  <!--  </div>-->
-
-  <!--  <BasicSmallLayout title="今日外呼任务数" value="800" unit="次" type="我的" />-->
-
-  <div style="width: 600px; height: 400px;">
+  <div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee;">
     <ThingsOutboundNumberRanking />
   </div>
-  <div style="width: 600px; height: 400px;">
+
+  <div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee;">
     <ThingsOutboundConnectionRateRanking />
   </div>
-  <div style="width: 600px; height: 400px;">
+
+  <div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee;">
     <ThingsOutboundConnectionNumberRanking />
   </div>
 </template>

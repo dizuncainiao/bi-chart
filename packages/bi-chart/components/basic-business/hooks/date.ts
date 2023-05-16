@@ -19,6 +19,9 @@ export type OptionDataKeys = keyof typeof optionDate
 
 // 获取时间文本
 export function getDateText(params: Record<string, unknown>) {
+  if (params.endDate === today && params.startDate === yesterday) {
+    return yesterday
+  }
   if (params.startDate && params.endDate) {
     return `${params.startDate}~${params.endDate}`
   } else {

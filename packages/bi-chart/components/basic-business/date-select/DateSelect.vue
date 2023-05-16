@@ -36,7 +36,7 @@ export default defineComponent({
   emits: ['update:params'],
   setup(props, { emit }) {
     const state = reactive<{
-      date: string
+      date: OptionDataKeys
       startDate: string
       endDate: string
     }>({
@@ -53,6 +53,8 @@ export default defineComponent({
         endDate: state.endDate
       })
     }
+
+    dateChange(state.date)
 
     return {
       state,
