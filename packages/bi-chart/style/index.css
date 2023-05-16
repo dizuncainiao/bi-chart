@@ -50,3 +50,57 @@
 .bi-chart-layout .bi-chart-content {
   height: calc(100% - 60px);
 }
+
+.special-small-chart {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  height: 100px;
+  padding: 29px 28px;
+  text-align: left;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.special-small-chart * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.special-small-chart .l-box h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #242934;
+}
+
+.special-small-chart .l-box .action-or-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.special-small-chart .l-box .action-or-info .info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #9ca6b9;
+}
+
+.special-small-chart .r-box .value {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #242934;
+}
+
+.special-small-chart .r-box .value .unit {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #9ca6b9;
+}
