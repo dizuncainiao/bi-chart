@@ -4,7 +4,7 @@ import {
   ThingsOutboundNumberRanking,
   ThingsOutboundConnectionRateRanking,
   ThingsOutboundConnectionNumberRanking
-} from 'bi-chart'
+} from 'dz-bi-chart'
 </script>
 
 <template>
