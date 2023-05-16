@@ -12,7 +12,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "bi-chart": "workspace:^0.0.2",
+    "dz-bi-chart": "workspace:^0.0.2",
     "vue": "^3.2.47"
   },
   "devDependencies": {

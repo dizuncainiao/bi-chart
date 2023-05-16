@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import 'bi-chart/style/index.css'
-import { initRequestInterceptors } from 'bi-chart'
+import 'dz-bi-chart/style/index.css'
+import { initRequestInterceptors } from 'dz-bi-chart'
 
 function getToken() {
-  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiIyNzk3IiwiZXhwIjoxNjg0MjI3MzE5fQ.ScHL-LIz-wGNtgt77kwNsEUPDIowQjozdTUkvz-ne6D0rkR_HiCjYLX9byk08JXFD8WZ3jPFR2q_j2fd1_zE4Q'
+  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiIyNzk3IiwiZXhwIjoxNjg0MjM2NzkwfQ.NxqHwgj5D0-xhpLicf0uGXauoZG6ZivHZcDyc7qFPbDQMrsrreayhwFuyf3l-NGKRTbxYRan8ibJGcwEqlaqug'
 }
 
 function getCompanyId() {
