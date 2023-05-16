@@ -34,9 +34,7 @@ export default defineConfig({
     minify: true,
     rollupOptions: {
       external: [
-        'vue',
         'axios',
-        'qs',
         'echarts',
         'echarts/core',
         'echarts/charts',
@@ -44,7 +42,10 @@ export default defineConfig({
         'echarts/features',
         'echarts/renderers',
         'lodash-es',
+        'qs',
+        'vue',
         'vue-echarts',
+        'dayjs',
         /\.less/
       ],
       input: 'index.ts',
