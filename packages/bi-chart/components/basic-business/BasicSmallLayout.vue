@@ -34,7 +34,7 @@ export default defineComponent({
     },
     // 数值
     value: {
-      type: String as PropType<string>
+      type: String as PropType<string | number>
     },
     // 标题
     title: {
