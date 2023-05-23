@@ -7,6 +7,9 @@ on:
   release:
     types: [created]
 
+env:
+  NPM_TOKEN_BI_CHART: ${{secrets.NPM_TOKEN}}
+
 jobs:
   build:
     runs-on: ubuntu-latest
