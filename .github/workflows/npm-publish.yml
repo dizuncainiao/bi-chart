@@ -7,19 +7,23 @@ on:
   release:
     types: [created]
 
-env:
-  NPM_TOKEN_BI_CHART: ${{secrets.NPM_TOKEN}}
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 签出您的存储库$GITHUB_WORKSPACE，以便您的工作流可以访问它。
       - uses: actions/checkout@v3
+      # 安装 pnpm 包管理器
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      # 使用特定版本的 node.js 设置 GitHub Actions 工作流程
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
+          node-version:
+          cache: 'pnpm'
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm run build
 
   publish-npm:
     needs: build
@@ -33,4 +37,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_BI_CHART}}
