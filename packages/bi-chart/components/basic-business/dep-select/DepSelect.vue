@@ -68,7 +68,7 @@ export default defineComponent({
       emit('update:params', {
         ...props.params,
         cdId: val,
-        depName: state.depListData.find(item => item.id === val).name
+        depName: state.depListData.find(item => item.id === val)?.name
       })
     }
 
