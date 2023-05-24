@@ -19,9 +19,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "move:dist": "cd scripts && move.sh",
-    "prenpm:publish": "pnpm run build && pnpm run move:dist",
-    "npm:publish": "pnpm publish"
+    "move:dist": "cd scripts && sh move.sh",
+    "prestart:publishing": "pnpm run build && pnpm run move:dist",
+    "start:publishing": "pnpm publish"
   },
   "peerDependencies": {
     "axios": "^1.4.0",

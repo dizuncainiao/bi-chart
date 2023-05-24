@@ -13,7 +13,7 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       # 签出您的存储库$GITHUB_WORKSPACE，以便您的工作流可以访问它。
@@ -28,17 +28,19 @@ jobs:
           node-version:
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
-      - run: pnpm run build
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-      - run: pnpm publish
+      - run: pnpm run start:publishing
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_BI_CHART}}
+
+#  publish-npm:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 16
+#          registry-url: https://registry.npmjs.org/
+#      - run: pnpm publish
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_BI_CHART}}
