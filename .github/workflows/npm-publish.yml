@@ -28,10 +28,11 @@ jobs:
           node-version:
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
-      - run: pnpm run go-publish
+      - run: pnpm run cd-bi-chart
+      - run: pnpm run build:dist
+      - run: pnpm run start:publishing
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_BI_CHART}}
-
 #  publish-npm:
 #    needs: build
 #    runs-on: ubuntu-latest

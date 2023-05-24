@@ -1,6 +1,6 @@
 {
   "name": "dz-bi-chart",
-  "version": "0.0.4",
+  "version": "0.0.0",
   "main": "index.ts",
   "module": "index.ts",
   "exports": {
@@ -20,8 +20,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "move:dist": "cd scripts && sh move.sh",
-    "prestart:publishing": "pnpm run build && pnpm run move:dist",
-    "start:publishing": "npm publish"
+    "build:dist": "pnpm run build && pnpm run move:dist",
+    "start:publishing": "cd publish && npm publish"
   },
   "peerDependencies": {
     "axios": "^1.4.0",

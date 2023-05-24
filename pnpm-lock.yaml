@@ -92,7 +92,7 @@ importers:
   examples:
     dependencies:
       dz-bi-chart:
-        specifier: workspace:^0.0.3
+        specifier: workspace:^0.0.0
         version: link:../packages/bi-chart
       vue:
         specifier: ^3.2.47

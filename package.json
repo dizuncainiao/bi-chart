@@ -11,7 +11,7 @@
     "lint-fix": "pnpm run lint-fix:script && pnpm run prettier:w && pnpm run lint-fix:style",
     "prepare": "husky install",
     "git-commit": "git add . && git cz",
-    "go-publish": "cd ./packages/bi-chart && pnpm run start:publishing"
+    "cd-bi-chart": "cd ./packages/bi-chart"
   },
   "keywords": [],
   "author": "",
