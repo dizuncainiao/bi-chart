@@ -13,7 +13,7 @@ on:
       - 'v*'
 
 env:
-  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+  NPM_TOKEN_BI_CHART: ${{secrets.NPM_TOKEN}}
 
 jobs:
   publish-npm:
