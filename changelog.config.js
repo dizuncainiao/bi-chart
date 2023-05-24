@@ -12,7 +12,8 @@ module.exports = {
     'refactor',
     'style',
     'ci',
-    'perf'
+    'perf',
+    'release'
   ],
   maxMessageLength: 64,
   minMessageLength: 3,
