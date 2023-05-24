@@ -12,7 +12,7 @@
     "./style/index.css": "./style/index.css"
   },
   "files": [
-    "style"
+    "dist"
   ],
   "style": "style/index.css",
   "scripts": {
