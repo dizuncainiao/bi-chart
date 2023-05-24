@@ -28,7 +28,7 @@ jobs:
           node-version:
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
-      - run: pnpm run start:publishing
+      - run: pnpm run go-publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_BI_CHART}}
 
