@@ -3,11 +3,38 @@ BI Chart Pie Demo
 ---
 
 <script setup>
-import { BasicBar } from 'bi-chart'
+import { BasicSmallLayout } from 'dz-bi-chart';
+import 'dz-bi-chart/style/index.css'
 </script>
 
-## Markdown Content
+<style>
+.special-small-chart .l-box h3 { margin-top: 0; }
+</style>
 
-  <div style="width: 600px; height: 400px;">
-    <basic-bar></basic-bar>
-  </div>
+## 小报表
+
+<BasicSmallLayout
+style="box-shadow: 0 0 8px #eee;"
+title="今日外呼任务数"
+value="800"
+unit="次"
+type="我的"
+/>
+
+## 示例
+
+```vue
+<script setup lang="ts">
+import { BasicSmallLayout } from 'dz-bi-chart'
+</script>
+
+<template>
+  <BasicSmallLayout
+    style="box-shadow: 0 0 8px #eee;"
+    title="今日外呼任务数"
+    value="800"
+    unit="次"
+    type="我的"
+  />
+</template>
+```
