@@ -32,6 +32,8 @@ jobs:
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
       - run: pnpm run go-publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 #  publish-npm:
 #    needs: build
 #    runs-on: ubuntu-latest
