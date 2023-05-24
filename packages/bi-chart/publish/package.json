@@ -1,6 +1,6 @@
 {
   "name": "dz-bi-chart",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/es/index.js",
   "module": "dist/es/index.js",
   "exports": {
