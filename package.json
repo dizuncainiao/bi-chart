@@ -10,7 +10,8 @@
     "lint-fix:style": "stylelint \"**/*.{vue,less,css}\" --fix",
     "lint-fix": "pnpm run lint-fix:script && pnpm run prettier:w && pnpm run lint-fix:style",
     "prepare": "husky install",
-    "git-commit": "git add . && git cz"
+    "git-commit": "git add . && git cz",
+    "gopublish": "cd packages/bi-chart && pnpm run start:publishing"
   },
   "keywords": [],
   "author": "",
