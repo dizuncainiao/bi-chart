@@ -10,6 +10,9 @@
     },
     "./dist/es/style.css": "./dist/es/style.css"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
