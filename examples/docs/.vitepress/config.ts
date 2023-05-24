@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/small-chart' }
     ],
 
     sidebar: [
@@ -18,7 +18,9 @@ export default defineConfig({
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
           { text: 'Vue3 Test Example', link: '/vue3-test' },
-          { text: 'BIChart Test Example', link: '/bi-chart-pie' }
+          { text: 'Quick Start', link: '/quick-start' },
+          { text: 'Small Chart', link: '/small-chart' },
+          { text: 'Big Chart', link: '/big-chart' }
         ]
       }
     ],

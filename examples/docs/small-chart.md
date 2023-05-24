@@ -1,6 +1,8 @@
 ---
-BI Chart Pie Demo
+BI Chart Small Chart Demo
 ---
+
+# 小报表
 
 <script setup>
 import { BasicSmallLayout } from 'dz-bi-chart';
@@ -11,7 +13,7 @@ import 'dz-bi-chart/style/index.css'
 .special-small-chart .l-box h3 { margin-top: 0; }
 </style>
 
-## 小报表
+## 预览
 
 <BasicSmallLayout
 style="box-shadow: 0 0 8px #eee;"

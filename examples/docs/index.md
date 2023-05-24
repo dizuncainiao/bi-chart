@@ -8,8 +8,8 @@ hero:
   tagline: Vue3 + Echarts + Axios 图表组件库
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速上手
+      link: /quick-start
     - theme: alt
       text: API Examples
       link: /api-examples
