@@ -12,6 +12,9 @@ on:
     tags:
       - 'v*'
 
+env:
+  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
@@ -29,8 +32,6 @@ jobs:
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
       - run: pnpm run go-publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_BI_CHART}}
 #  publish-npm:
 #    needs: build
 #    runs-on: ubuntu-latest
