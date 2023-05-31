@@ -17,5 +17,9 @@ module.exports = {
         'stylelint-config-recess-order'
       ]
     }
-  ]
+  ],
+  rules: {
+    'no-duplicate-selectors': null,
+    'selector-class-pattern': null
+  }
 }
