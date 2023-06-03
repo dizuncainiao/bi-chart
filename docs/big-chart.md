@@ -6,6 +6,7 @@ BI Chart Big Chart Demo
 
 <script setup>
 import { ThingsOutboundNumberRanking } from 'dz-bi-chart';
+import 'dz-bi-chart/dist/es/style.css'
 </script>
 
 ## 预览

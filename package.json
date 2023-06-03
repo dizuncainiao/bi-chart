@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
     "preinstall": "npx only-allow pnpm",
     "lint-fix:script": "eslint . --ext .js,.ts,.vue --fix",
     "prettier:w": "prettier -c -w .",
@@ -73,7 +70,6 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-less": "^1.0.6",
     "typescript": "^5.0.4",
-    "vitepress": "1.0.0-alpha.75",
     "vue-eslint-parser": "^9.1.1"
   }
 }

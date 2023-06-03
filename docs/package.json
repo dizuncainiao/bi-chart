@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dz-bi-chart": "workspace:^0.0.0"
-  },
   "devDependencies": {
+    "vite": "^4.3.5",
+    "vitepress": "1.0.0-alpha.75"
+  },
+  "dependencies": {
+    "dz-bi-chart": "^0.0.12",
+    "axios": "^1.4.0",
+    "echarts": "^5.4.2",
+    "lodash-es": "^4.17.21",
+    "qs": "^6.11.1",
     "vue": "^3.2.47",
-    "vite": "^4.3.5"
+    "vue-echarts": "^6.5.5",
+    "dayjs": "^1.11.5"
   }
 }

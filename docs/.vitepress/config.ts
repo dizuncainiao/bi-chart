@@ -15,9 +15,6 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
-          // { text: 'Markdown Examples', link: '/markdown-examples' },
-          // { text: 'Runtime API Examples', link: '/api-examples' },
-          // { text: 'Vue3 Test Example', link: '/vue3-test' },
           { text: 'Quick Start', link: '/quick-start' },
           { text: 'Small Chart', link: '/small-chart' },
           { text: 'Big Chart', link: '/big-chart' }

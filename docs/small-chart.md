@@ -6,7 +6,7 @@ BI Chart Small Chart Demo
 
 <script setup>
 import { BasicSmallLayout } from 'dz-bi-chart';
-import 'dz-bi-chart/style/index.css'
+import 'dz-bi-chart/dist/es/style.css'
 </script>
 
 <style>
