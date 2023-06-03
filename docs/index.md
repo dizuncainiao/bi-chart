@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 快速上手
-      link: /quick-start
+      link: /quick-start/
     - theme: alt
       text: API Examples
-      link: /small-chart
+      link: /small-chart/
 
 features:
   - title: Feature A

@@ -15,9 +15,9 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
-          { text: 'Quick Start', link: '/quick-start' },
-          { text: 'Small Chart', link: '/small-chart' },
-          { text: 'Big Chart', link: '/big-chart' }
+          { text: 'Quick Start', link: '/quick-start/' },
+          { text: 'Small Chart', link: '/small-chart/' },
+          { text: 'Big Chart', link: '/big-chart/' }
         ]
       }
     ],
