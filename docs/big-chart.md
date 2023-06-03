@@ -4,7 +4,7 @@ BI Chart Big Chart Demo
 
 # 大报表
 
-<script setup>
+<script setup lang="ts">
 import { ThingsOutboundNumberRanking } from 'dz-bi-chart';
 import 'dz-bi-chart/dist/es/style.css'
 </script>

@@ -4,7 +4,7 @@ BI Chart Small Chart Demo
 
 # 小报表
 
-<script setup>
+<script setup lang="ts">
 import { BasicSmallLayout } from 'dz-bi-chart';
 import 'dz-bi-chart/dist/es/style.css'
 </script>
