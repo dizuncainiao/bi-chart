@@ -11,6 +11,10 @@ export default defineConfig({
       outputDir: resolve(__dirname, './dist/es'),
       tsConfigFilePath: './tsconfig.json'
     }),
+    dts({
+      outputDir: resolve(__dirname, './dist/lib'),
+      tsConfigFilePath: './tsconfig.json'
+    }),
     {
       name: 'style',
       generateBundle(config, bundle) {
@@ -57,6 +61,13 @@ export default defineConfig({
           // https://cn.rollupjs.org/configuration-options/#output-preservemodulesroot
           preserveModulesRoot: './',
           dir: resolve(__dirname, 'dist/es')
+        },
+        {
+          format: 'cjs',
+          entryFileNames: '[name].js',
+          preserveModules: true,
+          preserveModulesRoot: './',
+          dir: resolve(__dirname, './dist/lib')
         }
       ]
     },
