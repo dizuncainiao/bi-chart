@@ -15,10 +15,10 @@ hero:
       link: /small-chart/
 
 features:
-  - title: Feature I
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature II
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature III
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 易学易用
+    details: 基于标准 HTML、CSS 和 JavaScript 构建，提供容易上手的 API 和一流的文档。
+  - title: 性能出色
+    details: 经过编译器优化、完全响应式的渲染系统，几乎不需要手动优化。
+  - title: 灵活多变
+    details: 丰富的、可渐进式集成的生态系统，可以根据应用规模在库和框架间切换自如。
 ---
