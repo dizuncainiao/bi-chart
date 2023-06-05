@@ -3,7 +3,7 @@ on:
   workflow_dispatch: {}
   push:
     tags:
-      - 'docs*'
+      - 'd*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
