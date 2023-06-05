@@ -12,17 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^4.3.5",
     "vitepress": "1.0.0-alpha.75"
   },
   "dependencies": {
-    "dz-bi-chart": "^0.0.13",
-    "axios": "^1.4.0",
-    "dayjs": "^1.11.5",
-    "echarts": "^5.4.2",
-    "lodash-es": "^4.17.21",
-    "qs": "^6.11.1",
-    "vue": "^3.2.47",
-    "vue-echarts": "^6.5.5"
+    "dz-bi-chart": "^0.0.14"
   }
 }

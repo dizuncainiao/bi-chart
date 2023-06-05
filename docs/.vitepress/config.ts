@@ -32,6 +32,9 @@ export default defineConfig({
     server: {
       open: true,
       port: 8888
+    },
+    ssr: {
+      noExternal: ['dz-bi-chart']
     }
   }
 })
