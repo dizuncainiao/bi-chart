@@ -15,10 +15,10 @@ hero:
       link: /small-chart/
 
 features:
-  - title: Feature A
+  - title: Feature I
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: Feature II
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Feature III
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
