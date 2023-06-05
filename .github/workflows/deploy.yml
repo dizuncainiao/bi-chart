@@ -1,19 +1,18 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Node.js Package
-
+name: Deploy
 on:
+  workflow_dispatch: {}
   push:
-    tags:
-      - 'v*'
-
-env:
-  NPM_TOKEN_BI_CHART: ${{secrets.NPM_TOKEN}}
-
+    branches:
+      - main
 jobs:
-  publish-npm:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       # 签出您的存储库$GITHUB_WORKSPACE，以便您的工作流可以访问它。
       - uses: actions/checkout@v3
@@ -27,6 +26,12 @@ jobs:
           node-version: 18
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
-      - run: pnpm run go-publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Build
+        run: pnpm run go-deploy
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: .vitepress/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
