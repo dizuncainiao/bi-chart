@@ -17,6 +17,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "pre:publish": "cd scripts && release.sh",
     "move:dist": "cd scripts && sh move.sh",
     "build:dist": "pnpm run build && pnpm run move:dist",
     "start:publishing": "cd publish && npm publish"
