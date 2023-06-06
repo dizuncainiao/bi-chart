@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "git-commit": "git add . && git cz",
     "go-publish": "cd ./packages/bi-chart && pnpm run build:dist && pnpm run start:publishing",
-    "go-deploy": "cd ./docs && pnpm run docs:build"
+    "go-deploy": "cd ./docs && pnpm run docs:build",
+    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js"
   },
   "keywords": [],
   "author": "",
@@ -50,7 +51,11 @@
     "@types/node": "^18.15.13",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
+    "compare-func": "^2.0.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
     "conventional-changelog-conventionalcommits": "^5.0.0",
+    "conventional-changelog-custom-config": "^0.3.1",
     "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",
