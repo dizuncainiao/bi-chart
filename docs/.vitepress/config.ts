@@ -9,7 +9,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/small-chart' }
+      { text: 'Examples', link: '/small-chart/' },
+      { text: 'ChangeLog', link: '/change-log/' }
     ],
 
     sidebar: [
