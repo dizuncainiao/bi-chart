@@ -1,7 +1,16 @@
-## [0.0.15](https://github.com/dizuncainiao/bi-chart/compare/v0.0.14...v0.0.15) (2023-06-06)
+## [0.0.18](https://github.com/dizuncainiao/bi-chart/compare/v0.0.17...v0.0.18) (2023-06-07)
+
+### 🚀 Performance Improvements
+
+- 🚀 release.sh 按功能点进行单一脚本抽离 ([16bfd52](https://github.com/dizuncainiao/bi-chart/commit/16bfd52))
+
+## [0.0.17](https://github.com/dizuncainiao/bi-chart/compare/v0.0.16...v0.0.17) (2023-06-07)
+
+## [0.0.16](https://github.com/dizuncainiao/bi-chart/compare/v0.0.14...v0.0.16) (2023-06-07)
 
 ### ✨ Features
 
+- ✨ 优化 release.sh ([692b0fe](https://github.com/dizuncainiao/bi-chart/commit/692b0fe))
 - ✨ docs 修改 github 地址 ([fbe60ba](https://github.com/dizuncainiao/bi-chart/commit/fbe60ba))
 
 ### 🐛 Bug Fixes
@@ -9,6 +18,10 @@
 - 🐛 部署依赖 node v14 版本 ([f677964](https://github.com/dizuncainiao/bi-chart/commit/f677964))
 - 🐛 修复 dist 路径 ([03f8119](https://github.com/dizuncainiao/bi-chart/commit/03f8119))
 - 🐛 node v14 版本用 pnpm@7 ([1da6b41](https://github.com/dizuncainiao/bi-chart/commit/1da6b41))
+
+### 🚀 Performance Improvements
+
+- 🚀 优化 release.sh ([f4b4c60](https://github.com/dizuncainiao/bi-chart/commit/f4b4c60))
 
 ## [0.0.14](https://github.com/dizuncainiao/bi-chart/compare/v0.0.13...v0.0.14) (2023-06-05)
 

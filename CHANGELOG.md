@@ -1,3 +1,11 @@
+## [0.0.18](https://github.com/dizuncainiao/bi-chart/compare/v0.0.17...v0.0.18) (2023-06-07)
+
+### 🚀 Performance Improvements
+
+- 🚀 release.sh 按功能点进行单一脚本抽离 ([16bfd52](https://github.com/dizuncainiao/bi-chart/commit/16bfd52))
+
+## [0.0.17](https://github.com/dizuncainiao/bi-chart/compare/v0.0.16...v0.0.17) (2023-06-07)
+
 ## [0.0.16](https://github.com/dizuncainiao/bi-chart/compare/v0.0.14...v0.0.16) (2023-06-07)
 
 ### ✨ Features
