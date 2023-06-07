@@ -12,12 +12,13 @@ cd ../../../
 # 提升根目录 package.json 版本
 npm version patch -m "chore: 🤖 v%s"
 
-pnpm run changelog
-
-git add .
-
-git commit -m "docs: 📝 Docs add CHANGELOG.md"
-
-echo "按任意键继续"
-read -n 1
-echo "继续运行"
+#changelog暂时手动执行
+#pnpm run changelog
+#
+#git add .
+#
+#git commit -m "docs: 📝 Docs add CHANGELOG.md"
+#
+#echo "按任意键继续"
+#read -n 1
+#echo "继续运行"
