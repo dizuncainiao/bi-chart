@@ -11,17 +11,17 @@ export default defineConfig(({ command, mode }) => {
     server: {
       proxy: {
         '/bdcloud-call-analytic': {
-          target: VITE_HOST,
+          target: 'https://demo.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         },
         '/associate-web': {
-          target: 'http://192.168.21.67:7071/',
+          target: 'https://demo.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         },
         '/bdsaas': {
-          target: VITE_HOST,
+          target: 'https://demo.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         }
