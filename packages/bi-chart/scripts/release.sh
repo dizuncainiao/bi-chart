@@ -1,7 +1,9 @@
 cd ../publish
 
-pnpm version patch -m "release: 🏹 v%s"
+npm version patch
 
 cd ../../../
+
+npm version patch -m "chore: 🤖 v%s"
 
 pnpm run changelog
