@@ -1,10 +1,5 @@
+#!/bin/sh
 cd ../publish
-
-#echo 'publish-version-patch.sh path is: '
-#pwd
-
-
-
 
 npm version patch
 

@@ -1,5 +1,4 @@
 #!/bin/sh
-echo "hello shell"
 
 # 删除当前目录 dist
 rm -rf "../publish/dist"
