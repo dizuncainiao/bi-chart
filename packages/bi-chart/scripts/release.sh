@@ -1,24 +1,8 @@
-cd ../publish
+. publish-version-patch.sh
 
-# 提升 publish/package.json 版本
-npm version patch
+. root-version-patch.sh
 
-git add .
-
-git commit -m "chore: 🤖 publish/package.json version patch"
-
-cd ../../../
-
-# 提升根目录 package.json 版本
-npm version patch -m "chore: 🤖 v%s"
-
-#changelog暂时手动执行
-#pnpm run changelog
-#
-#git add .
-#
-#git commit -m "docs: 📝 Docs add CHANGELOG.md"
-#
-#echo "按任意键继续"
-#read -n 1
-#echo "继续运行"
+########################调试########################
+echo "按任意键继续"
+read -n 1
+########################调试########################
