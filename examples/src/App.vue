@@ -3,7 +3,8 @@ import {
   BasicSmallLayout,
   ThingsOutboundNumberRanking,
   ThingsOutboundConnectionRateRanking,
-  ThingsOutboundConnectionNumberRanking
+  ThingsOutboundConnectionNumberRanking,
+  TestFunnelBig
 } from 'dz-bi-chart'
 </script>
 
@@ -26,5 +27,9 @@ import {
 
   <div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee;">
     <ThingsOutboundConnectionNumberRanking />
+  </div>
+
+  <div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee;">
+    <TestFunnelBig />
   </div>
 </template>

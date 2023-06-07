@@ -1,6 +1,6 @@
 import ECharts from 'vue-echarts'
 import { use, registerMap } from 'echarts/core'
-import { LineChart, BarChart, PieChart } from 'echarts/charts'
+import { LineChart, BarChart, PieChart, FunnelChart } from 'echarts/charts'
 import {
   TitleComponent,
   ToolboxComponent,
@@ -26,7 +26,8 @@ use([
   PieChart,
   CanvasRenderer,
   MarkLineComponent,
-  LabelLayout
+  LabelLayout,
+  FunnelChart
 ])
 
 // 文档参考：https://github.com/ecomfe/vue-echarts/blob/main/README.zh-Hans.md

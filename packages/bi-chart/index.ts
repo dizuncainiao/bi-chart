@@ -8,6 +8,7 @@ export { default as OutCallNumRankBig } from './components/business/out-call-num
 export { default as ThingsOutboundNumberRanking } from './components/business/things-outbound-number-ranking'
 export { default as ThingsOutboundConnectionRateRanking } from './components/business/things-outbound-connection-rate-ranking'
 export { default as ThingsOutboundConnectionNumberRanking } from './components/business/things-outbound-connection-number-ranking'
+export { default as TestFunnelBig } from './components/business/test-funnel-big'
 // 基础服务组件
 export {
   default as BasicBusinessLayout,

@@ -5,7 +5,7 @@ import 'dz-bi-chart/style/index.css'
 import { initRequestInterceptors } from 'dz-bi-chart'
 
 function getToken() {
-  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiIyNzk3IiwiZXhwIjoxNjg0MjM2NzkwfQ.NxqHwgj5D0-xhpLicf0uGXauoZG6ZivHZcDyc7qFPbDQMrsrreayhwFuyf3l-NGKRTbxYRan8ibJGcwEqlaqug'
+  return 'eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiZHNhYXMiLCJzdWIiOiIyNzk3IiwiZXhwIjoxNjg2MTI3ODU0fQ.DbYuEoiihanktkxiL9WzvMYt0Vm8IkddTzPr5MHZa44J-tRjbqAsRKZEo6G0QIGwpoyxs7ZiASkVEVUg7szwKw'
 }
 
 function getCompanyId() {
@@ -14,6 +14,9 @@ function getCompanyId() {
 
 initRequestInterceptors(config => {
   config.headers.Authorization = `Bearer ${getToken()}`
+
+  config.headers.companyId = 704
+  config.headers.profileId = 2797
   config.params = {
     ...config.params,
     COMPANYID: getCompanyId()
