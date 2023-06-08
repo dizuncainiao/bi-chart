@@ -1,3 +1,19 @@
+## [0.0.19](https://github.com/dizuncainiao/bi-chart/compare/v0.0.18...v0.0.19) (2023-06-08)
+
+### ✨ Features
+
+- ✨ 编写测试的漏斗图 ([6dfe0a6](https://github.com/dizuncainiao/bi-chart/commit/6dfe0a6))
+
+### 📝 Documentation
+
+- 📝 添加 “进阶主题” 模块 ([8d6c06d](https://github.com/dizuncainiao/bi-chart/commit/8d6c06d))
+- 📝 Docs add CHANGELOG.md ([b2a0d20](https://github.com/dizuncainiao/bi-chart/commit/b2a0d20))
+- 📝 Docs add CHANGELOG.md ([74f0abd](https://github.com/dizuncainiao/bi-chart/commit/74f0abd))
+
+### 🚀 Performance Improvements
+
+- 🚀 优化 changelog 配置 ([eed85ab](https://github.com/dizuncainiao/bi-chart/commit/eed85ab))
+
 ## [0.0.18](https://github.com/dizuncainiao/bi-chart/compare/v0.0.17...v0.0.18) (2023-06-07)
 
 ### 📝 Documentation
