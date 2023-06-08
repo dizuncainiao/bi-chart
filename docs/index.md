@@ -22,3 +22,5 @@ features:
   - title: 灵活多变
     details: 丰富的、可渐进式集成的生态系统，可以根据应用规模在库和框架间切换自如。
 ---
+
+[//]: # 'AxiosError: connect ECONNREFUSED ::1:80 报错可能和 node 版本有关，使用 node v14.21.3 可以解决'
