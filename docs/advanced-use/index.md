@@ -3,8 +3,8 @@ BI Chart Advanced Use
 ---
 
 # 源码共建
-我们正在寻找志同道合的开发者，一起为开源社区做出贡献。如果你对我们的项目感兴趣，欢迎你加入我们的团队，一起创造更多的精彩！
 
+我们正在寻找志同道合的开发者，一起为开源社区做出贡献。如果你对我们的项目感兴趣，欢迎你加入我们的团队，一起创造更多的精彩！
 
 <script>
 import {component as Viewer} from 'v-viewer'
@@ -17,16 +17,16 @@ export default {
     data() {
       return {
         images: [
-          withBase('../public/step-1.png'),
-          withBase('../public/step-2.png'),
-          withBase('../public/step-3.png'),
-          withBase('../public/step-4.png'),
-          withBase('../public/step-5.png'),
-          withBase('../public/step-6.png'),
-          withBase('../public/step-7.png'),
-          withBase('../public/step-8.png'),
-          withBase('../public/step-9.png'),
-          withBase('../public/step-10.png'),
+          withBase('../step-1.png'),
+          withBase('../step-2.png'),
+          withBase('../step-3.png'),
+          withBase('../step-4.png'),
+          withBase('../step-5.png'),
+          withBase('../step-6.png'),
+          withBase('../step-7.png'),
+          withBase('../step-8.png'),
+          withBase('../step-9.png'),
+          withBase('../step-10.png'),
         ]
       };
     },
