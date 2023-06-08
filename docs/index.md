@@ -11,7 +11,7 @@ hero:
       text: 快速上手
       link: /quick-start/
     - theme: alt
-      text: API Examples
+      text: 图表示例
       link: /small-chart/
 
 features:

@@ -106,6 +106,9 @@ importers:
       dz-bi-chart:
         specifier: ^0.0.14
         version: registry.npmjs.org/dz-bi-chart@0.0.14(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.2.47)
+      v-viewer:
+        specifier: ^3.0.11
+        version: registry.npmjs.org/v-viewer@3.0.11(vue@3.2.47)
     devDependencies:
       vitepress:
         specifier: 1.0.0-alpha.75
@@ -6102,7 +6105,6 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-    dev: true
 
   registry.npmjs.org/lru-cache@6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz}
@@ -6845,6 +6847,19 @@ packages:
     hasBin: true
     dev: true
 
+  registry.npmjs.org/v-viewer@3.0.11(vue@3.2.47):
+    resolution: {integrity: sha512-E8LOdAxhzuktt4HB3PswVCccQ1Q1sYHYnLsS6zaJISpb5EvmAFs5sYNfXnDLFxVb5DQ82v4ZlGxkYlseXwWRJw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/v-viewer/-/v-viewer-3.0.11.tgz}
+    id: registry.npmjs.org/v-viewer/3.0.11
+    name: v-viewer
+    version: 3.0.11
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      lodash: registry.npmjs.org/lodash@4.17.21
+      viewerjs: registry.npmjs.org/viewerjs@1.11.3
+      vue: registry.npmjs.org/vue@3.2.47
+    dev: false
+
   registry.npmjs.org/validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz}
     name: validate-npm-package-license
@@ -6853,6 +6868,12 @@ packages:
       spdx-correct: registry.npmjs.org/spdx-correct@3.2.0
       spdx-expression-parse: registry.npmjs.org/spdx-expression-parse@3.0.1
     dev: true
+
+  registry.npmjs.org/viewerjs@1.11.3:
+    resolution: {integrity: sha512-efG3U61Umuj/1x6JAtdvnY9m407C/RkrkFilsMcLEWKDivpjNU3/FeL+feCY1Vkur9aQeBJ+z6K4CCPP7hv6vA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/viewerjs/-/viewerjs-1.11.3.tgz}
+    name: viewerjs
+    version: 1.11.3
+    dev: false
 
   registry.npmjs.org/vue-demi@0.13.11(vue@3.2.47):
     resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.11.tgz}

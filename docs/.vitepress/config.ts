@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,18 +8,19 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/small-chart/' },
-      { text: 'ChangeLog', link: '/change-log/' }
+      {text: '首页', link: '/'},
+      {text: '示例', link: '/small-chart/'},
+      {text: '更新日志', link: '/change-log/'},
+      {text: '进阶主题', link: '/advanced-use/'},
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '使用指南',
         items: [
-          { text: 'Quick Start', link: '/quick-start/' },
-          { text: 'Small Chart', link: '/small-chart/' },
-          { text: 'Big Chart', link: '/big-chart/' }
+          {text: '快速开始', link: '/quick-start/'},
+          {text: '示例：小图表', link: '/small-chart/'},
+          {text: '示例：大图标', link: '/big-chart/'}
         ]
       }
     ],
