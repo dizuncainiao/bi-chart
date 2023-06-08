@@ -7,4 +7,4 @@ cp "./CHANGELOG.md" "./docs/change-log/index.md"
 
 git add .
 
-git commit -m "docs: 📝 Docs update CHANGELOG.md"
+git commit -m "chore: 🤖 Docs update CHANGELOG.md"
