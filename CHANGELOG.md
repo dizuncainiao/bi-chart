@@ -1,3 +1,9 @@
+## [0.0.20](https://github.com/dizuncainiao/bi-chart/compare/v0.0.19...v0.0.20) (2023-07-06)
+
+### 📝 Documentation
+
+- 📝 Docs add CHANGELOG.md ([03c7590](https://github.com/dizuncainiao/bi-chart/commit/03c7590))
+
 ## [0.0.19](https://github.com/dizuncainiao/bi-chart/compare/v0.0.18...v0.0.19) (2023-06-08)
 
 ### ✨ Features
@@ -30,16 +36,33 @@
 
 - 📝 Docs add CHANGELOG.md ([6bdeacb](https://github.com/dizuncainiao/bi-chart/commit/6bdeacb))
 
-## [0.0.16](https://github.com/dizuncainiao/bi-chart/compare/v0.0.14...v0.0.16) (2023-06-07)
+## [0.0.16](https://github.com/dizuncainiao/bi-chart/compare/v0.0.15...v0.0.16) (2023-06-07)
 
 ### ✨ Features
 
 - ✨ 优化 release.sh ([692b0fe](https://github.com/dizuncainiao/bi-chart/commit/692b0fe))
-- ✨ docs 修改 github 地址 ([fbe60ba](https://github.com/dizuncainiao/bi-chart/commit/fbe60ba))
 
 ### 🎡 Continuous Integration
 
 - 🎡 优化 pre:publish ([cbe1364](https://github.com/dizuncainiao/bi-chart/commit/cbe1364))
+
+### 📝 Documentation
+
+- 📝 Docs add CHANGELOG.md ([a91cf28](https://github.com/dizuncainiao/bi-chart/commit/a91cf28))
+
+### 🚀 Performance Improvements
+
+- 🚀 优化 release.sh ([f4b4c60](https://github.com/dizuncainiao/bi-chart/commit/f4b4c60))
+
+### 🚨 Tests
+
+- 🚨 release.sh 添加调试功能 ([f568db4](https://github.com/dizuncainiao/bi-chart/commit/f568db4))
+
+## [0.0.15](https://github.com/dizuncainiao/bi-chart/compare/v0.0.14...v0.0.15) (2023-06-06)
+
+### ✨ Features
+
+- ✨ docs 修改 github 地址 ([fbe60ba](https://github.com/dizuncainiao/bi-chart/commit/fbe60ba))
 
 ### 🐛 Bug Fixes
 
@@ -50,17 +73,8 @@
 ### 📝 Documentation
 
 - 📝 更新 features ([bc4adaa](https://github.com/dizuncainiao/bi-chart/commit/bc4adaa))
-- 📝 Docs add CHANGELOG.md ([a91cf28](https://github.com/dizuncainiao/bi-chart/commit/a91cf28))
 - 📝 docs config… ([e6587aa](https://github.com/dizuncainiao/bi-chart/commit/e6587aa))
 - 📝 index.md ([c54b17d](https://github.com/dizuncainiao/bi-chart/commit/c54b17d))
-
-### 🚀 Performance Improvements
-
-- 🚀 优化 release.sh ([f4b4c60](https://github.com/dizuncainiao/bi-chart/commit/f4b4c60))
-
-### 🚨 Tests
-
-- 🚨 release.sh 添加调试功能 ([f568db4](https://github.com/dizuncainiao/bi-chart/commit/f568db4))
 
 ## [0.0.14](https://github.com/dizuncainiao/bi-chart/compare/v0.0.13...v0.0.14) (2023-06-05)
 
