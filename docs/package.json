@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.0.0-beta.7"
+    "vitepress": "1.0.0-beta.6",
+    "less": "^4.1.3"
   },
   "dependencies": {
     "dz-bi-chart": "^0.0.14",

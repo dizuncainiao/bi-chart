@@ -23,7 +23,7 @@ $ yarn add dz-bi-chart
 // main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import 'dz-bi-chart/style/index.css'
+import 'dz-bi-chart/dist/es/style.css'
 
 createApp(App).mount('#app')
 ```

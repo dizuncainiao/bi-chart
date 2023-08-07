@@ -8,20 +8,20 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      outputDir: resolve(__dirname, './dist/es'),
-      tsConfigFilePath: './tsconfig.json'
+      outDir: resolve(__dirname, './dist/es'),
+      tsconfigPath: './tsconfig.json'
     }),
     dts({
-      outputDir: resolve(__dirname, './dist/lib'),
-      tsConfigFilePath: './tsconfig.json'
+      outDir: resolve(__dirname, './dist/lib'),
+      tsconfigPath: './tsconfig.json'
     }),
     {
-      name: 'style',
+      name: 'handle-style',
       generateBundle(config, bundle) {
         const keys = Object.keys(bundle)
 
         for (const key of keys) {
-          const bundler: any = bundle[key as string]
+          const bundler = bundle[key] as any
 
           this.emitFile({
             type: 'asset',
@@ -34,8 +34,8 @@ export default defineConfig({
   ],
   build: {
     target: 'modules',
-    outDir: 'es',
-    minify: true,
+    outDir: 'dist',
+    minify: 'esbuild',
     rollupOptions: {
       external: [
         'axios',
@@ -58,15 +58,14 @@ export default defineConfig({
           format: 'es',
           entryFileNames: '[name].js',
           preserveModules: true,
-          // https://cn.rollupjs.org/configuration-options/#output-preservemodulesroot
-          preserveModulesRoot: './',
+          preserveModulesRoot: resolve(__dirname, './'),
           dir: resolve(__dirname, 'dist/es')
         },
         {
           format: 'cjs',
           entryFileNames: '[name].js',
           preserveModules: true,
-          preserveModulesRoot: './',
+          preserveModulesRoot: resolve(__dirname, './'),
           dir: resolve(__dirname, './dist/lib')
         }
       ]
@@ -74,14 +73,6 @@ export default defineConfig({
     lib: {
       entry: './index.ts',
       name: 'BiChart'
-    }
-  },
-  resolve: {
-    alias: {
-      // fixme 使用别名在工作空间内引入会导致解析报错！！！
-      // '@utils': resolve(__dirname, '_utils'),
-      // '@plugins': resolve(__dirname, '_plugins'),
-      // '@hooks': resolve(__dirname, '_hooks')
     }
   }
 })

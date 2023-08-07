@@ -14,6 +14,8 @@ export {
   default as BasicBusinessLayout,
   BasicSmallLayout
 } from './components/basic-business'
+// 基础图表
+export { default as BasicChart } from './components/basic-chart'
 
 // 请求拦截器
 export { initRequestInterceptors } from './_plugins/axios-http'

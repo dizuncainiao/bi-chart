@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/bi-chart/',
-  title: 'BI Chart',
-  description: 'BI-Chart 图表组件库',
+  title: 'BI CHART',
+  description: 'BDSaas 图表组件库',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '示例', link: '/small-chart/' },
+      { text: '组件', link: '/small-chart/' },
       { text: '更新日志', link: '/change-log/' },
       { text: '进阶主题', link: '/advanced-use/' }
     ],
@@ -36,7 +36,7 @@ export default defineConfig({
   vite: {
     server: {
       open: true,
-      port: 8888
+      port: 6688
     },
     ssr: {
       noExternal: ['dz-bi-chart', 'v-viewer']

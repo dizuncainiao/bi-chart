@@ -20,6 +20,7 @@ module.exports = {
   ],
   rules: {
     'no-duplicate-selectors': null,
-    'selector-class-pattern': null
+    'selector-class-pattern': null,
+    'no-descending-specificity': null // 禁止低优先级的选择器出现在高优先级的选择器之后
   }
 }

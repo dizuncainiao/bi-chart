@@ -104,3 +104,11 @@
   line-height: 18px;
   color: #9ca6b9;
 }
+
+/* vue-echarts 样式可能丢失问题 */
+x-vue-echarts {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}

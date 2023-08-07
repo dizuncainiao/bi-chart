@@ -1,7 +1,11 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import '@/assets/style/base.less'
+import 'bdsaas-bc/dist/es/style.css'
+import 'blocks-next/theme-default/index.css'
+// 引入项目内的样式
 import 'dz-bi-chart/style/index.css'
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 import { initRequestInterceptors } from 'dz-bi-chart'
 
 function getToken() {
@@ -14,7 +18,6 @@ function getCompanyId() {
 
 initRequestInterceptors(config => {
   config.headers.Authorization = `Bearer ${getToken()}`
-
   config.headers.companyId = 704
   config.headers.profileId = 2797
   config.params = {
@@ -24,4 +27,4 @@ initRequestInterceptors(config => {
   return config
 })
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
