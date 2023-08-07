@@ -16,6 +16,8 @@ export {
 } from './components/basic-business'
 // 基础图表
 export { default as BasicChart } from './components/basic-chart'
+// 基础图表配置
+export { default as allEchartsOptions } from './components/basic-chart/echarts-options'
 
 // 请求拦截器
 export { initRequestInterceptors } from './_plugins/axios-http'
