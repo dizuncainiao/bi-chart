@@ -10,6 +10,7 @@ on:
 
 env:
   NPM_TOKEN_BI_CHART: ${{secrets.NPM_TOKEN}}
+  TEST_ROBOT_WB: ${{secrets.TEST_ROBOT_WB}}
 
 jobs:
   publish-npm:
