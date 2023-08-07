@@ -52,5 +52,5 @@ else
        }'
 fi
 
-echo "按任意键继续"
-read -n 1
+#echo "按任意键继续"
+#read -n 1
