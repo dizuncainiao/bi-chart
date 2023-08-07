@@ -1,8 +1,10 @@
+## [0.0.21](https://github.com/dizuncainiao/bi-chart/compare/v0.0.20...v0.0.21) (2023-08-07)
+
+### ✨ Features
+
+- ✨ 暴露出基础图表配置 ([b18af95](https://github.com/dizuncainiao/bi-chart/commit/b18af95))
+
 ## [0.0.20](https://github.com/dizuncainiao/bi-chart/compare/v0.0.19...v0.0.20) (2023-07-06)
-
-### 📝 Documentation
-
-- 📝 Docs add CHANGELOG.md ([03c7590](https://github.com/dizuncainiao/bi-chart/commit/03c7590))
 
 ## [0.0.19](https://github.com/dizuncainiao/bi-chart/compare/v0.0.18...v0.0.19) (2023-06-08)
 
@@ -10,21 +12,11 @@
 
 - ✨ 编写测试的漏斗图 ([6dfe0a6](https://github.com/dizuncainiao/bi-chart/commit/6dfe0a6))
 
-### 📝 Documentation
-
-- 📝 添加 “进阶主题” 模块 ([8d6c06d](https://github.com/dizuncainiao/bi-chart/commit/8d6c06d))
-- 📝 Docs add CHANGELOG.md ([b2a0d20](https://github.com/dizuncainiao/bi-chart/commit/b2a0d20))
-- 📝 Docs add CHANGELOG.md ([74f0abd](https://github.com/dizuncainiao/bi-chart/commit/74f0abd))
-
 ### 🚀 Performance Improvements
 
 - 🚀 优化 changelog 配置 ([eed85ab](https://github.com/dizuncainiao/bi-chart/commit/eed85ab))
 
 ## [0.0.18](https://github.com/dizuncainiao/bi-chart/compare/v0.0.17...v0.0.18) (2023-06-07)
-
-### 📝 Documentation
-
-- 📝 Todo.md ([1a9fc33](https://github.com/dizuncainiao/bi-chart/commit/1a9fc33))
 
 ### 🚀 Performance Improvements
 
@@ -32,31 +24,15 @@
 
 ## [0.0.17](https://github.com/dizuncainiao/bi-chart/compare/v0.0.16...v0.0.17) (2023-06-07)
 
-### 📝 Documentation
-
-- 📝 Docs add CHANGELOG.md ([6bdeacb](https://github.com/dizuncainiao/bi-chart/commit/6bdeacb))
-
 ## [0.0.16](https://github.com/dizuncainiao/bi-chart/compare/v0.0.15...v0.0.16) (2023-06-07)
 
 ### ✨ Features
 
 - ✨ 优化 release.sh ([692b0fe](https://github.com/dizuncainiao/bi-chart/commit/692b0fe))
 
-### 🎡 Continuous Integration
-
-- 🎡 优化 pre:publish ([cbe1364](https://github.com/dizuncainiao/bi-chart/commit/cbe1364))
-
-### 📝 Documentation
-
-- 📝 Docs add CHANGELOG.md ([a91cf28](https://github.com/dizuncainiao/bi-chart/commit/a91cf28))
-
 ### 🚀 Performance Improvements
 
 - 🚀 优化 release.sh ([f4b4c60](https://github.com/dizuncainiao/bi-chart/commit/f4b4c60))
-
-### 🚨 Tests
-
-- 🚨 release.sh 添加调试功能 ([f568db4](https://github.com/dizuncainiao/bi-chart/commit/f568db4))
 
 ## [0.0.15](https://github.com/dizuncainiao/bi-chart/compare/v0.0.14...v0.0.15) (2023-06-06)
 
@@ -69,12 +45,6 @@
 - 🐛 部署依赖 node v14 版本 ([f677964](https://github.com/dizuncainiao/bi-chart/commit/f677964))
 - 🐛 修复 dist 路径 ([03f8119](https://github.com/dizuncainiao/bi-chart/commit/03f8119))
 - 🐛 node v14 版本用 pnpm@7 ([1da6b41](https://github.com/dizuncainiao/bi-chart/commit/1da6b41))
-
-### 📝 Documentation
-
-- 📝 更新 features ([bc4adaa](https://github.com/dizuncainiao/bi-chart/commit/bc4adaa))
-- 📝 docs config… ([e6587aa](https://github.com/dizuncainiao/bi-chart/commit/e6587aa))
-- 📝 index.md ([c54b17d](https://github.com/dizuncainiao/bi-chart/commit/c54b17d))
 
 ## [0.0.14](https://github.com/dizuncainiao/bi-chart/compare/v0.0.13...v0.0.14) (2023-06-05)
 
@@ -93,20 +63,6 @@
 
 - ✨ add vitepress ([7439845](https://github.com/dizuncainiao/bi-chart/commit/7439845))
 - ✨ docs ([6a191d5](https://github.com/dizuncainiao/bi-chart/commit/6a191d5))
-
-### 🎡 Continuous Integration
-
-- 🎡 changelog.config.js ([611d026](https://github.com/dizuncainiao/bi-chart/commit/611d026))
-- 🎡 config…… ([6131a69](https://github.com/dizuncainiao/bi-chart/commit/6131a69))
-- 🎡 move.sh ([40dabe2](https://github.com/dizuncainiao/bi-chart/commit/40dabe2))
-- 🎡 npm-publish.yml ([9152ae4](https://github.com/dizuncainiao/bi-chart/commit/9152ae4))
-- 🎡 npm-publish.yml ([aad7a7a](https://github.com/dizuncainiao/bi-chart/commit/aad7a7a))
-
-### 📝 Documentation
-
-- 📝 快速开始、大报表、小报表 ([b2895d4](https://github.com/dizuncainiao/bi-chart/commit/b2895d4))
-- 📝 quick-start.md ([9e1a443](https://github.com/dizuncainiao/bi-chart/commit/9e1a443))
-- 📝 vitepress 示例 ([bc778d0](https://github.com/dizuncainiao/bi-chart/commit/bc778d0))
 
 ### 🚀 Performance Improvements
 
@@ -161,30 +117,12 @@
 - 🎸 .gitignore ([4a8d248](https://github.com/dizuncainiao/bi-chart/commit/4a8d248))
 - 🎸 init ([efbd32e](https://github.com/dizuncainiao/bi-chart/commit/efbd32e))
 
-### 🎡 Continuous Integration
-
-- 🎡 npm token ([ae480f8](https://github.com/dizuncainiao/bi-chart/commit/ae480f8))
-- 🎡 npm-publish.yml ([b3e708b](https://github.com/dizuncainiao/bi-chart/commit/b3e708b))
-- 🎡 pnpm-lock.yaml ([060ddda](https://github.com/dizuncainiao/bi-chart/commit/060ddda))
-- 🎡 publish ([1c1b2d3](https://github.com/dizuncainiao/bi-chart/commit/1c1b2d3))
-
 ### 🐛 Bug Fixes
 
 - 🐛 修复 echarts 依赖关系 ([27c9e3a](https://github.com/dizuncainiao/bi-chart/commit/27c9e3a))
 - 🐛 Uncaught TypeError: Cannot read properties of undefined ([7620830](https://github.com/dizuncainiao/bi-chart/commit/7620830))
 
-### 📝 Documentation
-
-- 📝 移除 element-plus peerDependencies ([1f70f4f](https://github.com/dizuncainiao/bi-chart/commit/1f70f4f))
-- 📝 移除注释 ([d64f1e7](https://github.com/dizuncainiao/bi-chart/commit/d64f1e7))
-- 📝 Renaming to dz-bi-chart ([5f1496b](https://github.com/dizuncainiao/bi-chart/commit/5f1496b))
-- 📝 Todo.md ([8d4d18d](https://github.com/dizuncainiao/bi-chart/commit/8d4d18d))
-
 ### 🚀 Performance Improvements
 
 - 🚀 功能解耦 ([44de177](https://github.com/dizuncainiao/bi-chart/commit/44de177))
 - 🚀 解耦解耦 ([a2d619d](https://github.com/dizuncainiao/bi-chart/commit/a2d619d))
-
-### 🚨 Tests
-
-- 🚨 add ([7f03488](https://github.com/dizuncainiao/bi-chart/commit/7f03488))
