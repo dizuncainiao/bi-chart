@@ -2,26 +2,8 @@
 BI Chart Big Chart Demo
 ---
 
-# 大报表
-
-<script setup lang="ts">
-import ThingsOutboundNumberRankingDemo from '../components/business/ThingsOutboundNumberRankingDemo.vue'
-</script>
+# 外呼次数排行榜（事儿电话）
 
 ## 预览
 
-<ThingsOutboundNumberRankingDemo />
-
-## 示例
-
-```vue
-<script setup lang="ts">
-import { ThingsOutboundNumberRanking } from 'dz-bi-chart'
-</script>
-
-<template>
-  <div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee;">
-    <ThingsOutboundNumberRanking />
-  </div>
-</template>
-```
+<demo src="../demos/business/ThingsOutboundNumberRankingDemo.vue"></demo>

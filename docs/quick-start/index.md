@@ -2,9 +2,9 @@
 BI Chart Quick Start
 ---
 
-# 快速上手
+# 快速开始
 
-## 使用包管理器
+## 安装
 
 ```shell
 # pnpm
@@ -28,11 +28,15 @@ import 'dz-bi-chart/dist/es/style.css'
 createApp(App).mount('#app')
 ```
 
-## hello world
+## Hello world
 
 ```vue
 <script setup lang="ts">
 import { BasicSmallLayout } from 'dz-bi-chart'
+
+defineOptions({
+  name: 'BasicSmallLayoutDemo'
+})
 </script>
 
 <template>

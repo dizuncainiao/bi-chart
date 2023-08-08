@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import VitePluginVitepressDemo from 'vite-plugin-vitepress-demo'
+import VitePluginVitePressDemo from 'vite-plugin-vitepress-demo'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,10 +18,23 @@ export default defineConfig({
     sidebar: [
       {
         text: '使用指南',
+        items: [{ text: '快速开始', link: '/quick-start/' }]
+      },
+      {
+        text: '基础布局',
+        items: [{ text: '小报表布局', link: '/small-chart-layout/' }]
+      },
+      {
+        text: '基础图表',
+        items: [{ text: '条形图', link: '/basic-bar/' }]
+      },
+      {
+        text: '业务图表',
         items: [
-          { text: '快速开始', link: '/quick-start/' },
-          { text: '示例：小图表', link: '/small-chart/' },
-          { text: '示例：大图标', link: '/big-chart/' }
+          {
+            text: '外呼次数排行榜（事儿电话）',
+            link: '/things-outbound-number-ranking/'
+          }
         ]
       }
     ],
@@ -36,14 +49,11 @@ export default defineConfig({
   lastUpdated: true,
   vite: {
     server: {
-      open: true,
       port: 6688
     },
     ssr: {
-      noExternal: ['dz-bi-chart', 'v-viewer']
+      noExternal: ['dz-bi-chart', 'v-viewer', 'axios']
     },
-    plugins: [
-      VitePluginVitepressDemo(),
-    ]
-  },
+    plugins: [VitePluginVitePressDemo()]
+  }
 })

@@ -108,8 +108,8 @@ importers:
   docs:
     dependencies:
       dz-bi-chart:
-        specifier: ^0.0.14
-        version: 0.0.14(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4)
+        specifier: ^0.0.21
+        version: 0.0.21(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4)
       v-viewer:
         specifier: ^3.0.11
         version: 3.0.11(vue@3.3.4)
@@ -2840,8 +2840,8 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dz-bi-chart@0.0.14(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4):
-    resolution: {integrity: sha512-U9vlSl/wNnZ+rPwZof+X6dDhgLaz/I7edwsCD2XT5Ji0jB0U47LtXElPWbg8EBRKDJvHsRDIEjiF8CBfTNFOnA==}
+  /dz-bi-chart@0.0.21(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4):
+    resolution: {integrity: sha512-/zhDbqL5wED5S5taeI0JEfP0sVRJcA8Gcaw3pIs441M2aflvkxSjtjPNQ5ArjMUBN6KWAySpju/sxgygKv0aSw==}
     peerDependencies:
       axios: ^1.4.0
       dayjs: ^1.11.5

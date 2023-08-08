@@ -1,6 +1,8 @@
 ---
-BI Chart Small Chart Demo
+BI Chart Basic Bar Demo
 ---
+
+# 小报表
 
 ## 预览
 
