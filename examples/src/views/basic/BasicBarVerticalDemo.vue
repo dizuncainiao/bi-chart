@@ -2,7 +2,7 @@
 import { BasicChart, allEchartsOptions } from 'dz-bi-chart'
 
 defineOptions({
-  name: 'BasicBarDemo'
+  name: 'BasicBarVerticalDemo'
 })
 </script>
 
@@ -17,6 +17,6 @@ defineOptions({
       box-shadow: 0 0 8px #eee;
 "
   >
-    <BasicChart :options="allEchartsOptions.basicBar" />
+    <BasicChart :options="allEchartsOptions.basicBarVertical" />
   </div>
 </template>

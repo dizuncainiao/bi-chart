@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import type { RouteRecordRaw } from 'vue-router'
+import bar from '@/router/bar.ts'
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -18,11 +19,7 @@ export const routes: Array<RouteRecordRaw> = [
     component: () =>
       import('@/views/business/ThingsOutboundNumberRankingDemo.vue')
   },
-  {
-    path: '/basic-bar-demo',
-    name: 'BasicBarDemo',
-    component: () => import('@/views/basic/BasicBarDemo.vue')
-  }
+  ...bar
 ]
 
 export default createRouter({
