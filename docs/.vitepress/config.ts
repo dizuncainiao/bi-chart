@@ -52,7 +52,7 @@ export default defineConfig({
       port: 6688
     },
     ssr: {
-      noExternal: ['dz-bi-chart', 'v-viewer', 'axios']
+      noExternal: ['dz-bi-chart', 'v-viewer']
     },
     plugins: [VitePluginVitePressDemo()]
   }
