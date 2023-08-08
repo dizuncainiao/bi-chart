@@ -1,3 +1,10 @@
+## [0.0.22](https://github.com/dizuncainiao/bi-chart/compare/v0.0.21...v0.0.22) (2023-08-08)
+
+### ✨ Features
+
+- ✨ 新增一个 demo 预览插件,快速预览及复制代码 ([d93ed00](https://github.com/dizuncainiao/bi-chart/commit/d93ed00))
+- ✨ 重命名事儿电话图表标题 ([232bceb](https://github.com/dizuncainiao/bi-chart/commit/232bceb))
+
 ## [0.0.21](https://github.com/dizuncainiao/bi-chart/compare/v0.0.20...v0.0.21) (2023-08-07)
 
 ### ✨ Features
