@@ -5,14 +5,12 @@ BI Chart Big Chart Demo
 # 大报表
 
 <script setup lang="ts">
-import { ThingsOutboundNumberRanking } from 'dz-bi-chart';
+import ThingsOutboundNumberRankingDemo from '../components/business/ThingsOutboundNumberRankingDemo.vue'
 </script>
 
 ## 预览
 
-<div style="width: 600px; height: 400px; box-shadow: 0 0 8px #eee; border-radius: 12px;">
-  <ThingsOutboundNumberRanking />
-</div>
+<ThingsOutboundNumberRankingDemo />
 
 ## 示例
 

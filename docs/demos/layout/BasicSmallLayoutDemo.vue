@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { BasicSmallLayout } from 'dz-bi-chart'
+
+defineOptions({
+  name: 'BasicSmallLayoutDemo'
+})
+</script>
+
 <template>
   <BasicSmallLayout
     style="box-shadow: 0 0 8px #eee;"
@@ -7,7 +15,3 @@
     type="我的"
   />
 </template>
-
-<script setup lang="ts">
-import { BasicSmallLayout } from 'dz-bi-chart'
-</script>
