@@ -1,6 +1,6 @@
 <template>
   <BasicBusinessLayout
-    title="外呼接通率排行榜"
+    title="外呼接通率排行榜（事儿电话）"
     chart-type="basicBar"
     url="/associate-web/callReport/callConnectedRateRankStatistics"
     :params="params"
