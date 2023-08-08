@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import VitePluginVitepressDemo from 'vite-plugin-vitepress-demo'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -40,6 +41,9 @@ export default defineConfig({
     },
     ssr: {
       noExternal: ['dz-bi-chart', 'v-viewer']
-    }
-  }
+    },
+    plugins: [
+      VitePluginVitepressDemo(),
+    ]
+  },
 })

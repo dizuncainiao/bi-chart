@@ -5,6 +5,7 @@ import Theme from 'vitepress/theme'
 import './style.less'
 import './viewer.css'
 import 'dz-bi-chart/dist/es/style.css'
+import { AntdTheme } from 'vite-plugin-vitepress-demo/theme'
 
 export default {
   ...Theme,
@@ -15,5 +16,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    app.component('Demo', AntdTheme)
   }
 }
