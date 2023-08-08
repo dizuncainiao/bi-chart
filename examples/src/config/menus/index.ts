@@ -1,4 +1,8 @@
 import { BnIconSetting } from 'blocks-next'
+import Bar from './bar.ts'
+import Line from './line.ts'
+import Pie from './pie.ts'
+import Funnel from './funnel.ts'
 
 export const menuData = [
   {
@@ -16,14 +20,7 @@ export const menuData = [
   {
     groupName: '基础图表',
     showGroup: true,
-    children: [
-      {
-        icon: BnIconSetting,
-        title: '条形图',
-        routeName: 'BasicBarDemo',
-        showItem: true
-      }
-    ]
+    children: [...Bar, ...Line, ...Pie, ...Funnel]
   },
   {
     groupName: '业务图表',

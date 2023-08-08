@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { BcLayout } from 'bdsaas-bc'
 import { ref } from 'vue'
-import { menuData } from '@/utils/menu.ts'
+import { menuData } from '@/config/menus'
 
 defineOptions({
   name: 'App'
