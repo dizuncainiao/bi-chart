@@ -14,11 +14,19 @@ export default {
   yAxis: valueYAxis,
   series: [
     {
-      data: [120, 200, 150, 80, 70, 110, 130],
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [320, 302, 301, 334, 390, 330, 320],
       ...verticalBarStyle
     },
     {
-      data: [220, 100, 250, 180, 270, 220, 160],
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [120, 132, 101, 134, 90, 230, 210],
       ...verticalBarStyle
     }
   ],
