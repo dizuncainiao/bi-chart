@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import type { RouteRecordRaw } from 'vue-router'
 import bar from '@/router/bar.ts'
+import pie from '@/router/pie.ts'
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -19,7 +20,8 @@ export const routes: Array<RouteRecordRaw> = [
     component: () =>
       import('@/views/business/ThingsOutboundNumberRankingDemo.vue')
   },
-  ...bar
+  ...bar,
+  ...pie
 ]
 
 export default createRouter({

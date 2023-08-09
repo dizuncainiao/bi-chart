@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '组件', link: '/small-chart/' },
+      { text: '组件', link: '/small-chart-layout/' },
       { text: '更新日志', link: '/change-log/' },
       { text: '进阶主题', link: '/advanced-use/' }
     ],
@@ -26,7 +26,10 @@ export default defineConfig({
       },
       {
         text: '基础图表',
-        items: [{ text: '条形图', link: '/basic-bar/' }]
+        items: [
+          { text: '条形图', link: '/basic-bar/' },
+          { text: '饼图', link: '/basic-pie/' },
+        ]
       },
       {
         text: '业务图表',
