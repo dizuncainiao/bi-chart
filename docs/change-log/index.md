@@ -1,3 +1,9 @@
+## [0.0.26](https://github.com/dizuncainiao/bi-chart/compare/v0.0.25...v0.0.26) (2023-08-09)
+
+### ✨ Features
+
+- ✨ 完成 折线图 初步配置 ([0ca8f71](https://github.com/dizuncainiao/bi-chart/commit/0ca8f71))
+
 ## [0.0.25](https://github.com/dizuncainiao/bi-chart/compare/v0.0.24...v0.0.25) (2023-08-09)
 
 ### ✨ Features
