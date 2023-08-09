@@ -14,7 +14,19 @@ export default {
   yAxis: categoryYAxis,
   series: [
     {
-      data: [120, 200, 150, 80, 70, 110, 130],
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [320, 302, 301, 334, 390, 330, 320],
+      ...horizontalBarStyle
+    },
+    {
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [120, 132, 101, 134, 90, 230, 210],
       ...horizontalBarStyle
     }
   ],
