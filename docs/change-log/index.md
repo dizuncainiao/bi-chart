@@ -1,3 +1,9 @@
+## [0.0.25](https://github.com/dizuncainiao/bi-chart/compare/v0.0.24...v0.0.25) (2023-08-09)
+
+### ✨ Features
+
+- ✨ 引入 blocks-next 样式 ([83ef23f](https://github.com/dizuncainiao/bi-chart/commit/83ef23f))
+
 ## [0.0.24](https://github.com/dizuncainiao/bi-chart/compare/v0.0.22...v0.0.24) (2023-08-09)
 
 ### ✨ Features
