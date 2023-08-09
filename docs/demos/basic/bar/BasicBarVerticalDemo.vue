@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { BasicChart, allEchartsOptions } from 'dz-bi-chart'
+
+defineOptions({
+  name: 'BasicBarVerticalDemo'
+})
 </script>
 
 <template>
   <div
     style="
-      width: 600px;
       height: 400px;
       padding: 28px;
       background: #fff;
@@ -13,6 +16,6 @@ import { BasicChart, allEchartsOptions } from 'dz-bi-chart'
       box-shadow: 0 0 8px #eee;
 "
   >
-    <BasicChart :options="allEchartsOptions.basicBar" />
+    <BasicChart :options="allEchartsOptions.basicBarVertical" />
   </div>
 </template>
