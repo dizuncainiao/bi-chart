@@ -29,6 +29,7 @@ export default defineConfig({
         items: [
           { text: '条形图', link: '/basic-bar/' },
           { text: '饼图', link: '/basic-pie/' },
+          { text: '折线图', link: '/basic-line/' }
         ]
       },
       {
