@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '组件', link: '/small-chart/' },
+      { text: '组件', link: '/small-chart-layout/' },
       { text: '更新日志', link: '/change-log/' },
       { text: '进阶主题', link: '/advanced-use/' }
     ],
@@ -32,7 +32,7 @@ export default defineConfig({
         text: '业务图表',
         items: [
           {
-            text: '外呼次数排行榜（事儿电话）',
+            text: '外呼次数排行榜-Things',
             link: '/things-outbound-number-ranking/'
           }
         ]
