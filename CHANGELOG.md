@@ -1,11 +1,11 @@
-## [0.0.23](https://github.com/dizuncainiao/bi-chart/compare/v0.0.22...v0.0.23) (2023-08-09)
+## [0.0.24](https://github.com/dizuncainiao/bi-chart/compare/v0.0.22...v0.0.24) (2023-08-09)
 
 ### ✨ Features
 
 - ✨ 基础柱状图 options ([d3bad9f](https://github.com/dizuncainiao/bi-chart/commit/d3bad9f))
-- ✨ 完成柱状图所有 options ([4b08639](https://github.com/dizuncainiao/bi-chart/commit/4b08639))
+- ✨ 完成柱状图所有 options ([e98fdb2](https://github.com/dizuncainiao/bi-chart/commit/e98fdb2))
 - ✨ 完善饼图的配置整理&文档&示例 ([86d9d72](https://github.com/dizuncainiao/bi-chart/commit/86d9d72))
-- ✨ 柱状图、饼图优化 ([fe15300](https://github.com/dizuncainiao/bi-chart/commit/fe15300))
+- ✨ 柱状图、饼图优化 ([9328146](https://github.com/dizuncainiao/bi-chart/commit/9328146))
 - ✨ element-plus 替换为 blocks-next ([66a1bda](https://github.com/dizuncainiao/bi-chart/commit/66a1bda))
 
 ## [0.0.22](https://github.com/dizuncainiao/bi-chart/compare/v0.0.21...v0.0.22) (2023-08-08)
