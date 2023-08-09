@@ -108,8 +108,8 @@ importers:
   docs:
     dependencies:
       dz-bi-chart:
-        specifier: ^0.0.21
-        version: 0.0.21(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4)
+        specifier: ^0.0.22
+        version: 0.0.22(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4)
       v-viewer:
         specifier: ^3.0.11
         version: 3.0.11(vue@3.3.4)
@@ -167,8 +167,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       blocks-next:
-        specifier: ^1.0.1-alpha.33.2
-        version: 1.0.1(vue@3.3.4)
+        specifier: ^1.0.1-alpha.34
+        version: 1.0.1-alpha.34(vue@3.3.4)
       dayjs:
         specifier: ^1.11.5
         version: 1.11.7
@@ -2051,16 +2051,6 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /blocks-next@1.0.1(vue@3.3.4):
-    resolution: {integrity: sha512-9/wigpaSIUezvEVTxIk2FWO5t5GJ1FjoZusuxMAwobLb+tUrvfXhbjTQ+jrV4Qq5FQDK1fUwRzeqS+iLqfIohA==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      vue: ^3.2.33
-    dependencies:
-      dayjs: 1.11.7
-      vue: 3.3.4
-    dev: false
-
   /blocks-next@1.0.1-alpha.33(vue@3.3.4):
     resolution: {integrity: sha512-CPQcrXckGKGxH0MPcPvnN7LfMfWItbChPXFIMj4d5JP92wR1ApYcGGftq7jy36HQHAnY+mYtQPb/2YyukFkSMg==}
     peerDependencies:
@@ -2783,8 +2773,8 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dz-bi-chart@0.0.21(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4):
-    resolution: {integrity: sha512-/zhDbqL5wED5S5taeI0JEfP0sVRJcA8Gcaw3pIs441M2aflvkxSjtjPNQ5ArjMUBN6KWAySpju/sxgygKv0aSw==}
+  /dz-bi-chart@0.0.22(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4):
+    resolution: {integrity: sha512-vcPKNMluNaEZWk65qcE2lcsda1McoDg6p1cvCguPqzF9ATn2Rm0jdgg+TqEb2E17qYAWznXrKBWAg3puxU9EtQ==}
     peerDependencies:
       axios: ^1.4.0
       dayjs: ^1.11.5
