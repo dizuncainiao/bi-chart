@@ -1,5 +1,7 @@
 import './_plugins/vue-echarts'
 import './style/index.css'
+// fixme：blocks-next 按需加载样式无效
+import 'blocks-next/theme-default/index.css'
 
 // 业务组件
 export { default as OutCallTaskBig } from './components/business/out-call-task-big'
