@@ -1,1 +1,5 @@
 export { default as basicPie } from './basic-pie'
+export { default as basicRollPie } from './basic-roll-pie'
+export { default as basicHalfRollPie } from './basic-half-roll-pie'
+export { default as basicMultiplePie } from './basic-multiple-pie'
+export { default as basicRosePie } from './basic-rose-pie'
