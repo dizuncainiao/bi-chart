@@ -134,8 +134,8 @@ export const colors = [
   '#242934'
 ]
 
-// 通用 tooltip
-export const tooltip = {
+// 通用柱状图 tooltip
+export const barTooltip = {
   trigger: 'axis',
   axisPointer: {
     // Use axis to trigger tooltip

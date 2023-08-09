@@ -1,3 +1,16 @@
+// 通用饼图 tooltip
+export const pieTooltip = {
+  trigger: 'item',
+  className: 'tooltip-layer-wrapper',
+  formatter: `
+      <div class="tooltip-layer-box">
+        <div class="title">{b}</div>
+        <div class="num">数量：{c}</div>
+        <div class="proportion">占比：{d}%</div>
+      </div>
+    `
+}
+
 export const colorToolTipLegend = {
   color: [
     '#0056FF',
@@ -11,9 +24,7 @@ export const colorToolTipLegend = {
     '#2ED4A9',
     '#242934'
   ],
-  tooltip: {
-    trigger: 'item'
-  },
+  tooltip: pieTooltip,
   legend: {
     type: 'scroll',
     orient: 'vertical',
@@ -28,7 +39,7 @@ export const colorToolTipLegend = {
       padding: [0, 0, 0, 5]
     },
     itemWidth: 6
-  },
+  }
 }
 
 export const labelEmphasis = {
@@ -46,5 +57,5 @@ export const labelEmphasis = {
   },
   labelLine: {
     show: false
-  },
+  }
 }

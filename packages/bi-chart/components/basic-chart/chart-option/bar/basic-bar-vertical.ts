@@ -1,7 +1,7 @@
 import {
   categoryXAxis,
   colors,
-  tooltip,
+  barTooltip,
   valueYAxis,
   verticalBarStyle,
   verticalGrid
@@ -9,7 +9,7 @@ import {
 
 export default {
   color: colors,
-  tooltip: tooltip,
+  tooltip: barTooltip,
   xAxis: categoryXAxis,
   yAxis: valueYAxis,
   series: [

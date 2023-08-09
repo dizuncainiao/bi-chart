@@ -3,13 +3,13 @@ import {
   colors,
   horizontalBarStyle,
   horizontalGrid,
-  tooltip,
+  barTooltip,
   valueXAxis
 } from './basic'
 
 export default {
   color: colors,
-  tooltip: tooltip,
+  tooltip: barTooltip,
   xAxis: valueXAxis,
   yAxis: categoryYAxis,
   series: [
