@@ -1,31 +1,31 @@
 <template>
-  <el-select
-    style="width: 80px;"
+  <bn-select
+    style="width: 95px;"
     v-model="state.date"
-    :teleported="false"
     placeholder="选择时间"
     size="small"
     @change="dateChange"
   >
-    <el-option label="昨日" value="1" />
-    <el-option label="近7天" value="2" />
-    <el-option label="本周" value="3" />
-    <el-option label="近30天" value="4" />
-    <el-option label="本月" value="5" />
-  </el-select>
+    <bn-option label="昨日" value="1" />
+    <bn-option label="近7天" value="2" />
+    <bn-option label="本周" value="3" />
+    <bn-option label="近30天" value="4" />
+    <bn-option label="本月" value="5" />
+  </bn-select>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, reactive } from 'vue'
-import { OptionDataKeys, optionDate, today, yesterday } from '../hooks/date'
-import dayjs from 'dayjs'
-import { ElOption, ElSelect } from 'element-plus'
+import { defineComponent, reactive } from 'vue'
+import { Select as BnSelect, Option as BnOption } from 'blocks-next'
+import { optionDate, today, yesterday } from '../hooks/date'
+import type { PropType } from 'vue'
+import type { OptionDataKeys } from '../hooks/date'
 
 export default defineComponent({
   name: 'DateSelect',
   components: {
-    ElOption,
-    ElSelect
+    BnSelect,
+    BnOption
   },
   props: {
     params: {

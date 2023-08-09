@@ -1,40 +1,35 @@
 <template>
-  <ElConfigProvider :locale="locale">
-    <div class="bi-chart-layout">
-      <div class="bi-chart-header">
-        <div class="l-box">
-          <div class="title">{{ $props.title }}</div>
-          <div class="info">
-            <slot name="info"></slot>
-          </div>
-        </div>
-
-        <div class="r-box">
-          <slot name="form"></slot>
+  <div class="bi-chart-layout">
+    <div class="bi-chart-header">
+      <div class="l-box">
+        <div class="title">{{ $props.title }}</div>
+        <div class="info">
+          <slot name="info"></slot>
         </div>
       </div>
-      <div class="bi-chart-content">
-        <BasicChart :options="chartOptions" />
+
+      <div class="r-box">
+        <slot name="form"></slot>
       </div>
     </div>
-  </ElConfigProvider>
+    <div class="bi-chart-content">
+      <BasicChart :options="chartOptions" />
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, toRefs, PropType, unref, watch } from 'vue'
-import { ElConfigProvider } from 'element-plus'
+import { defineComponent, toRefs, PropType, unref, watch } from 'vue'
 import { ChartType, getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
 import BasicChart from '../basic-chart/BasicChart.vue'
-import { locale } from './hooks/locale'
 
 type SetOption = (data: any, option: any) => void
 
 export default defineComponent({
   name: 'BasicBusinessLayout',
   components: {
-    BasicChart,
-    ElConfigProvider
+    BasicChart
   },
   props: {
     title: {
@@ -88,8 +83,7 @@ export default defineComponent({
     )
 
     return {
-      chartOptions,
-      locale
+      chartOptions
     }
   }
 })

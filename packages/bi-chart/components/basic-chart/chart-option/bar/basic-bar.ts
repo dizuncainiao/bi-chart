@@ -1,4 +1,16 @@
 export default {
+  color: [
+    '#0056FF',
+    '#2ED4A9',
+    '#242934',
+    '#FF7125',
+    '#FFC420',
+    '#F12525',
+    '#646B7A',
+    '#0056FF',
+    '#2ED4A9',
+    '#242934'
+  ],
   xAxis: {
     type: 'value',
     splitLine: {
@@ -36,7 +48,6 @@ export default {
       data: [120, 200, 150, 80, 70, 110, 130],
       type: 'bar',
       itemStyle: {
-        color: '#0056FF',
         opacity: 0.8,
         borderWidth: 2
       },
