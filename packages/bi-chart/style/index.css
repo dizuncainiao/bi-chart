@@ -1,3 +1,4 @@
+/* 业务布局组件 */
 .chart-box {
   width: 100%;
   min-width: 300px;
@@ -111,4 +112,25 @@ x-vue-echarts {
   width: 100%;
   min-width: 0;
   height: 100%;
+}
+
+/* echarts tooltip */
+.tooltip-layer-wrapper {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.tooltip-layer-box {
+  padding: 12px !important;
+  font-size: 12px !important;
+  line-height: 19px;
+  color: #fff !important;
+  background: rgb(0 0 0 / 70%) !important;
+  border: none !important;
+  border-radius: 4px;
+
+  .title {
+    font-size: 13px;
+  }
 }

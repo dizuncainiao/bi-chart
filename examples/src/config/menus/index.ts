@@ -1,4 +1,3 @@
-import { BnIconSetting } from 'blocks-next'
 import Bar from './bar.ts'
 import Line from './line.ts'
 import Pie from './pie.ts'
@@ -10,7 +9,6 @@ export const menuData = [
     showGroup: true,
     children: [
       {
-        icon: BnIconSetting,
         title: '小报表布局',
         routeName: 'BasicSmallLayoutDemo',
         showItem: true
@@ -27,7 +25,6 @@ export const menuData = [
     showGroup: true,
     children: [
       {
-        icon: BnIconSetting,
         title: '外呼次数排行榜',
         routeName: 'ThingsOutboundNumberRankingDemo',
         showItem: true
