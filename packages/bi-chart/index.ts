@@ -1,6 +1,5 @@
 import './_plugins/vue-echarts'
 import './style/index.css'
-import 'element-plus/es/components/select/style/css'
 
 // 业务组件
 export { default as OutCallTaskBig } from './components/business/out-call-task-big'

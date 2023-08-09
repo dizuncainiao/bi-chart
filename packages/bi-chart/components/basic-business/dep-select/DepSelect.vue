@@ -1,31 +1,32 @@
 <template>
-  <el-select
-    style="width: 124px;"
+  <bn-select
+    style="width: 140px;"
     v-model="state.cdId"
-    :teleported="false"
     placeholder="选择部门"
     size="small"
     @change="depChange"
   >
-    <el-option
+    <bn-option
       v-for="item of state.depListData"
       :key="item.id"
       :label="item.name"
       :value="item.id"
     />
-  </el-select>
+  </bn-select>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, reactive } from 'vue'
-import { ElOption, ElSelect } from 'element-plus'
-import { DepInfo, getDepartmentList } from '../../../_plugins/axios-http/apis'
+import { defineComponent, reactive } from 'vue'
+import { Select as BnSelect, Option as BnOption } from 'blocks-next'
+import { getDepartmentList } from '../../../_plugins/axios-http/apis'
+import type { PropType } from 'vue'
+import type { DepInfo } from '../../../_plugins/axios-http/apis'
 
 export default defineComponent({
   name: 'DepSelect',
   components: {
-    ElOption,
-    ElSelect
+    BnSelect,
+    BnOption
   },
   props: {
     params: {

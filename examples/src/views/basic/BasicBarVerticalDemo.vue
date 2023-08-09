@@ -9,7 +9,6 @@ defineOptions({
 <template>
   <div
     style="
-      width: 600px;
       height: 400px;
       padding: 28px;
       background: #fff;
