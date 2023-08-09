@@ -3,6 +3,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import bar from '@/router/bar.ts'
 import pie from '@/router/pie.ts'
+import funnel from '@/router/funnel.ts'
+import map from '@/router/map.ts'
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -21,7 +23,9 @@ export const routes: Array<RouteRecordRaw> = [
       import('@/views/business/ThingsOutboundNumberRankingDemo.vue')
   },
   ...bar,
-  ...pie
+  ...pie,
+  ...funnel,
+  ...map
 ]
 
 export default createRouter({

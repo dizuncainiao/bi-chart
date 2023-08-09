@@ -3,6 +3,7 @@ import Bar from './bar.ts'
 import Line from './line.ts'
 import Pie from './pie.ts'
 import Funnel from './funnel.ts'
+import Map from './map.ts'
 
 export const menuData = [
   {
@@ -20,7 +21,7 @@ export const menuData = [
   {
     groupName: '基础图表',
     showGroup: true,
-    children: [...Bar, ...Line, ...Pie, ...Funnel]
+    children: [...Bar, ...Line, ...Pie, ...Funnel, ...Map]
   },
   {
     groupName: '业务图表',
