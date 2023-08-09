@@ -1,5 +1,5 @@
 ---
-BI Chart Small Chart Layout Demo
+BI Chart Basic Pie Demo
 ---
 
 # 饼图
