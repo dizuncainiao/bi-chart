@@ -1,3 +1,9 @@
+## [0.0.30](https://github.com/dizuncainiao/bi-chart/compare/v0.0.29...v0.0.30) (2023-08-10)
+
+### ✨ Features
+
+- ✨ 清空图表的默认展示数据 ([f2f4bec](https://github.com/dizuncainiao/bi-chart/commit/f2f4bec))
+
 ## [0.0.29](https://github.com/dizuncainiao/bi-chart/compare/v0.0.28...v0.0.29) (2023-08-10)
 
 ### ✨ Features
