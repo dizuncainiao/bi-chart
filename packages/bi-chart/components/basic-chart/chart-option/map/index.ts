@@ -1,0 +1,1 @@
+export { default as chinaMap } from './china'

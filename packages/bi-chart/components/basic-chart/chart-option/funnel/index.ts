@@ -1,0 +1,1 @@
+export { default as basicFunnel } from './basic-funnel'
