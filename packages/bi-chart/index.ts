@@ -13,7 +13,9 @@ export { default as TestFunnelBig } from './components/business/test-funnel-big'
 // 基础服务组件
 export {
   default as BasicBusinessLayout,
-  BasicSmallLayout
+  BasicSmallLayout,
+  DepSelect,
+  DateSelect
 } from './components/basic-business'
 // 基础图表
 export { default as BasicChart } from './components/basic-chart'
