@@ -12,7 +12,7 @@ hero:
       link: /quick-start/
     - theme: alt
       text: 图表示例
-      link: /small-chart/
+      link: /basic-bar/
 
 features:
   - title: 易学易用
