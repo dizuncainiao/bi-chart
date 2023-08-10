@@ -5,6 +5,7 @@ import bar from '@/router/bar.ts'
 import pie from '@/router/pie.ts'
 import funnel from '@/router/funnel.ts'
 import map from '@/router/map.ts'
+import Line from '@/router/line.ts'
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -25,7 +26,8 @@ export const routes: Array<RouteRecordRaw> = [
   ...bar,
   ...pie,
   ...funnel,
-  ...map
+  ...map,
+  ...Line
 ]
 
 export default createRouter({

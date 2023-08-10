@@ -31,6 +31,7 @@ export default defineConfig({
           { text: '饼图', link: '/basic-pie/' },
           { text: '漏斗图', link: '/funnel/' },
           { text: '地图', link: '/map/' }
+          { text: '折线图', link: '/basic-line/' }
         ]
       },
       {
