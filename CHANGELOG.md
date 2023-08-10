@@ -1,3 +1,9 @@
+## [0.0.29](https://github.com/dizuncainiao/bi-chart/compare/v0.0.28...v0.0.29) (2023-08-10)
+
+### ✨ Features
+
+- ✨ 新增尖漏斗图&两瓣玫瑰图 ([53ad0e2](https://github.com/dizuncainiao/bi-chart/commit/53ad0e2))
+
 ## [0.0.28](https://github.com/dizuncainiao/bi-chart/compare/v0.0.27...v0.0.28) (2023-08-10)
 
 ### ✨ Features
