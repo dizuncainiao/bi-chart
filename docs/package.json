@@ -17,7 +17,7 @@
     "vitepress": "1.0.0-beta.6"
   },
   "dependencies": {
-    "dz-bi-chart": "^0.0.27",
+    "dz-bi-chart": "^0.0.28",
     "v-viewer": "^3.0.11"
   }
 }
