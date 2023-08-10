@@ -1,3 +1,9 @@
+## [0.0.28](https://github.com/dizuncainiao/bi-chart/compare/v0.0.27...v0.0.28) (2023-08-10)
+
+### ✨ Features
+
+- ✨ 暴露 DepSelect、DateSelect ([65f09a3](https://github.com/dizuncainiao/bi-chart/commit/65f09a3))
+
 ## [0.0.27](https://github.com/dizuncainiao/bi-chart/compare/v0.0.26...v0.0.27) (2023-08-10)
 
 ### ✨ Features
