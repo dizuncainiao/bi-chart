@@ -1,6 +1,6 @@
 export default [
   {
-    title: '漏斗图-基础漏斗',
+    title: '漏斗图',
     routeName: 'BasicFunnelDemo',
     showItem: true
   }

@@ -1,7 +1,7 @@
 export default {
   color: ['#FFC420', '#646b7a', '#2ED4A9', '#FF7125', '#0056FF'],
   title: {
-    text: '平漏斗',
+    text: '尖漏斗',
     top: '28px',
     left: '28px',
     textStyle: {
@@ -26,8 +26,8 @@ export default {
       width: '55%',
       min: 0,
       max: 100,
-      minSize: '20%', // 漏斗最小值的宽度
-      maxSize: '80%', // 漏斗最大值的宽度
+      minSize: '0%', // 漏斗最小值的宽度
+      maxSize: '100%', // 漏斗最大值的宽度
       sort: 'descending', // 漏斗数据降序排列， ascending 升序
       gap: 2,
       label: {
@@ -42,16 +42,14 @@ export default {
           length: 50 // 视觉引导线长度。
         }
       },
-      tooltip: {
-        show: false // 让系列一(漏斗图外层图形的提示框不显示)
-      },
       data: [
-        { value: 60, name: 'Visit' },
-        { value: 40, name: 'Inquiry' },
-        { value: 20, name: 'Order' },
-        { value: 80, name: 'Click' },
+        { value: 50, name: 'Visit' },
+        { value: 70, name: 'Inquiry' },
+        { value: 80, name: 'Order' },
+        { value: 90, name: 'Click' },
         { value: 100, name: 'Show' }
       ]
     }
   ]
 }
+  
