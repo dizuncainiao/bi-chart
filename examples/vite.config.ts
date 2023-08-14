@@ -16,6 +16,11 @@ export default defineConfig(({ command, mode }) => {
           changeOrigin: true,
           secure: true
         },
+        '/pscrm-rest': {
+          target: 'https://demo.bdsaas.cn/',
+          changeOrigin: true,
+          secure: true
+        },
         '/associate-web': {
           target: 'https://demo.bdsaas.cn/',
           changeOrigin: true,

@@ -2,7 +2,9 @@
   <div class="bi-chart-layout">
     <div class="bi-chart-header">
       <div class="l-box">
-        <div class="title">{{ $props.title }}</div>
+        <div class="title">
+          <slot name="title">{{ $props.title }}</slot>
+        </div>
         <div class="info">
           <slot name="info"></slot>
         </div>

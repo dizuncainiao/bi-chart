@@ -26,3 +26,4 @@ dist-ssr
 examples/docs/.vitepress/cache/*
 docs/.vitepress/cache/*
 docs/.vitepress/.temp/*
+examples/src/hooks/user-info.ts
