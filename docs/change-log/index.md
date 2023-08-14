@@ -1,3 +1,5 @@
+## [0.0.32](https://github.com/dizuncainiao/bi-chart/compare/v0.0.31...v0.0.32) (2023-08-14)
+
 ## [0.0.31](https://github.com/dizuncainiao/bi-chart/compare/v0.0.30...v0.0.31) (2023-08-14)
 
 ### ✨ Features
