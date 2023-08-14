@@ -11,7 +11,7 @@
     <template #form>
       <DepSelect v-model:params="params" prop-key="deptId" />
 
-      <DateSelect v-model:params="params" />
+      <DateTypeSelect v-model:params="params" />
     </template>
   </BasicBusinessLayout>
 </template>
@@ -20,13 +20,13 @@
 import { defineComponent, ref, computed, watch } from 'vue'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 import { getDateText } from '../../basic-business/hooks/date'
-import DateSelect from '../../basic-business/date-select/DateSelect.vue'
 import DepSelect from '../../basic-business/dep-select/DepSelect.vue'
+import DateTypeSelect from '../../basic-business/date-type-select/DateTypeSelect.vue'
 import type { PropType } from 'vue'
 
 export default defineComponent({
   name: 'CrmConversionRateAnalysis',
-  components: { DepSelect, DateSelect, BasicBusinessLayout },
+  components: { DateTypeSelect, DepSelect, BasicBusinessLayout },
   props: {
     // 传给接口的参数
     extraParams: {
@@ -40,6 +40,7 @@ export default defineComponent({
       deptId: 0,
       // 部门名称, 用于模版中显示，不参与请求
       depName: '',
+      dateType: 1,
       ...props.extraParams
     })
 
