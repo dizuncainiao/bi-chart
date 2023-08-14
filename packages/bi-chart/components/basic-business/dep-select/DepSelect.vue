@@ -32,6 +32,11 @@ export default defineComponent({
     params: {
       type: Object as PropType<Record<string, any>>,
       required: true
+    },
+    // 部门 id 的 key，默认为 'cdId'（解决不同接口接受的字段名不同）
+    propKey: {
+      type: String as PropType<string>,
+      default: 'cdId'
     }
   },
   emits: ['update:params', 'change'],
@@ -68,7 +73,9 @@ export default defineComponent({
     function depChange(val: number) {
       emit('update:params', {
         ...props.params,
-        cdId: val,
+        // 部门 id
+        [props.propKey]: val,
+        // 部门名称，用于模版中显示
         depName: state.depListData.find(item => item.id === val)?.name
       })
     }

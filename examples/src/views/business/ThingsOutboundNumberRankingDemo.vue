@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ThingsOutboundNumberRanking } from 'dz-bi-chart'
+import CrmConversionRateAnalysisDemo from '@/views/business/CrmConversionRateAnalysisDemo.vue'
 
 defineOptions({
   name: 'ThingsOutboundNumberRankingDemo'
@@ -18,4 +19,7 @@ defineOptions({
   >
     <ThingsOutboundNumberRanking />
   </div>
+  <br />
+  <br />
+  <CrmConversionRateAnalysisDemo />
 </template>
