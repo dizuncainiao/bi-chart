@@ -45,12 +45,15 @@ export default defineComponent({
     })
 
     // 监听父组件传入的参数，更新 params
-    watch(props.extraParams, val => {
-      params.value = {
-        ...params.value,
-        ...val
+    watch(
+      () => props.extraParams,
+      val => {
+        params.value = {
+          ...params.value,
+          ...val
+        }
       }
-    })
+    )
 
     const dateText = computed(() => getDateText(params.value))
 
