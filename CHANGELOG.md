@@ -1,10 +1,16 @@
-## [0.0.32](https://github.com/dizuncainiao/bi-chart/compare/v0.0.31...v0.0.32) (2023-08-14)
-
-## [0.0.31](https://github.com/dizuncainiao/bi-chart/compare/v0.0.30...v0.0.31) (2023-08-14)
+## [0.0.33](https://github.com/dizuncainiao/bi-chart/compare/v0.0.30...v0.0.33) (2023-08-14)
 
 ### ✨ Features
 
-- ✨ 优化 BasicBusinessLayout.vue 请求方式 ([741d4e4](https://github.com/dizuncainiao/bi-chart/commit/741d4e4))
+- ✨ 保持兼容性的一些功能扩展 ([07672ca](https://github.com/dizuncainiao/bi-chart/commit/07672ca))
+- ✨ 新增 DateTypeSelect.vue ([4e547eb](https://github.com/dizuncainiao/bi-chart/commit/4e547eb))
+- ✨ 新增业务组件-CRM 客户阶段漏斗 ([aa0b846](https://github.com/dizuncainiao/bi-chart/commit/aa0b846))
+- ✨ 优化 BasicBusinessLayout.vue 请求方式 ([3b0c944](https://github.com/dizuncainiao/bi-chart/commit/3b0c944))
+
+### 🐛 Bug Fixes
+
+- 🐛 修复监听 props 值的写法 ([2473af0](https://github.com/dizuncainiao/bi-chart/commit/2473af0))
+- 🐛 移除表格的 title 属性 ([730dbd3](https://github.com/dizuncainiao/bi-chart/commit/730dbd3))
 
 ## [0.0.30](https://github.com/dizuncainiao/bi-chart/compare/v0.0.29...v0.0.30) (2023-08-10)
 
