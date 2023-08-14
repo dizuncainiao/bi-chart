@@ -11,6 +11,8 @@ export { default as ThingsOutboundConnectionRateRanking } from './components/bus
 export { default as ThingsOutboundConnectionNumberRanking } from './components/business/things-outbound-connection-number-ranking'
 export { default as TestFunnelBig } from './components/business/test-funnel-big'
 export { default as CrmConversionRateAnalysis } from './components/business/crm-conversion-rate-analysis'
+export { default as CrmCustomerStageFunnel } from './components/business/crm-customer-stage-funnel'
+
 // 基础服务组件
 export {
   default as BasicBusinessLayout,
