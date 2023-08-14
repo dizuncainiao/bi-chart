@@ -1,7 +1,4 @@
 export default {
-  title: {
-    text: '中国地图'
-  },
   tooltip: {
     trigger: 'item'
   },
