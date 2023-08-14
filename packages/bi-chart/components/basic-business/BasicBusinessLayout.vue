@@ -19,10 +19,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, toRefs, PropType, unref, watch } from 'vue'
-import { ChartType, getChartOption } from '../basic-chart/echarts-options'
+import { defineComponent, toRefs, unref, watch } from 'vue'
+import { getChartOption } from '../basic-chart/echarts-options'
 import http from '../../_plugins/axios-http'
 import BasicChart from '../basic-chart/BasicChart.vue'
+import type { PropType } from 'vue'
+import type { ChartType } from '../basic-chart/echarts-options'
+import type { RequestMethod } from '../../_plugins/axios-http/http'
 
 type SetOption = (data: any, option: any) => void
 
@@ -47,7 +50,7 @@ export default defineComponent({
     },
     // 请求方式
     method: {
-      type: String as PropType<'postJson'>,
+      type: String as PropType<RequestMethod>,
       default: 'postJson'
     },
     // 请求参数
