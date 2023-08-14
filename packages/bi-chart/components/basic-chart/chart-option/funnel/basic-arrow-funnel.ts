@@ -1,15 +1,5 @@
 export default {
   color: ['#FFC420', '#646b7a', '#2ED4A9', '#FF7125', '#0056FF'],
-  title: {
-    text: '尖漏斗',
-    top: '28px',
-    left: '28px',
-    textStyle: {
-      color: '#242934',
-      fontSize: 16,
-      fontFamily: 'PingFangSC-Semibold, "PingFang SC"'
-    }
-  },
   tooltip: {
     show: true,
     trigger: 'item',
