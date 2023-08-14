@@ -69,7 +69,11 @@ export default defineComponent({
     const chartOptions = getChartOption(unref(chartType))
 
     function getData() {
-      http[method.value](url.value, params.value)
+      const _params = unref(params)
+      // 删除部门名称，避免影响请求
+      Reflect.deleteProperty(_params, 'depName')
+
+      http[method.value](url.value, _params)
         .then(res => {
           props.setOption(res.data, chartOptions.value)
         })

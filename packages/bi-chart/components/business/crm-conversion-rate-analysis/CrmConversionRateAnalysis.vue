@@ -9,7 +9,7 @@
   >
     <template #info>{{ dateText }} | {{ params.depName }}</template>
     <template #form>
-      <DepSelect v-model:params="params" />
+      <DepSelect v-model:params="params" prop-key="deptId" />
 
       <DateSelect v-model:params="params" />
     </template>
@@ -17,23 +17,38 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, watch } from 'vue'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 import { getDateText } from '../../basic-business/hooks/date'
 import DateSelect from '../../basic-business/date-select/DateSelect.vue'
 import DepSelect from '../../basic-business/dep-select/DepSelect.vue'
+import type { PropType } from 'vue'
 
 export default defineComponent({
   name: 'CrmConversionRateAnalysis',
   components: { DepSelect, DateSelect, BasicBusinessLayout },
-  setup() {
+  props: {
+    // 传给接口的参数
+    extraParams: {
+      type: Object as PropType<Record<string, any>>,
+      default: () => ({})
+    }
+  },
+  setup(props) {
     const params = ref({
-      cdId: 0,
-      endDate: '',
-      pageNo: 0,
-      pageSize: 0,
-      startDate: '',
-      depName: ''
+      // 部门 id
+      deptId: 0,
+      // 部门名称, 用于模版中显示，不参与请求
+      depName: '',
+      ...props.extraParams
+    })
+
+    // 监听父组件传入的参数，更新 params
+    watch(props.extraParams, val => {
+      params.value = {
+        ...params.value,
+        ...val
+      }
     })
 
     const dateText = computed(() => getDateText(params.value))
