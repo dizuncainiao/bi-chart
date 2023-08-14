@@ -108,8 +108,8 @@ importers:
   docs:
     dependencies:
       dz-bi-chart:
-        specifier: ^0.0.30
-        version: 0.0.30(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4)
+        specifier: ^0.0.32
+        version: 0.0.32(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.1)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.2)(vue@3.3.4)
       v-viewer:
         specifier: ^3.0.11
         version: 3.0.11(vue@3.3.4)
@@ -2774,24 +2774,25 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dz-bi-chart@0.0.30(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.2)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.5)(vue@3.3.4):
-    resolution: {integrity: sha512-SQPUI9S8Fmi+lbnadN2YZZGD+TjSQtqziu1OZHDU0g4GpAFCZqrr/+9Nl158hFjcrkjqX0LVRxhnxcbE6+9CkA==}
+  /dz-bi-chart@0.0.32(axios@1.4.0)(dayjs@1.11.7)(echarts@5.4.1)(lodash-es@4.17.21)(qs@6.11.1)(vue-echarts@6.5.2)(vue@3.3.4):
+    resolution: {integrity: sha512-Ors3o9DPOqS06dYXd7RJQmm0EqvL6VgjH2m5TqPzE334nGzyygiD9j8Yn3osaAH0q5hZz9g4XNmLXvGyvSe0+A==}
     peerDependencies:
       axios: ^1.4.0
       dayjs: ^1.11.5
-      echarts: ^5.4.2
+      echarts: 5.4.1
       lodash-es: ^4.17.21
       qs: ^6.11.1
-      vue: ^3.2.47
-      vue-echarts: ^6.5.5
+      vue: ^3.3.4
+      vue-echarts: 6.5.2
     dependencies:
       axios: 1.4.0
+      blocks-next: 1.0.1-alpha.34(vue@3.3.4)
       dayjs: 1.11.7
-      echarts: 5.4.2
+      echarts: 5.4.1
       lodash-es: 4.17.21
       qs: 6.11.1
       vue: 3.3.4
-      vue-echarts: 6.5.5(echarts@5.4.2)(vue@3.3.4)
+      vue-echarts: 6.5.2(echarts@5.4.1)(vue@3.3.4)
     dev: false
 
   /eastasianwidth@0.2.0:
@@ -2803,13 +2804,6 @@ packages:
     dependencies:
       tslib: 2.3.0
       zrender: 5.4.1
-    dev: false
-
-  /echarts@5.4.2:
-    resolution: {integrity: sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==}
-    dependencies:
-      tslib: 2.3.0
-      zrender: 5.4.3
     dev: false
 
   /electron-to-chromium@1.4.485:
@@ -5825,23 +5819,6 @@ packages:
       vue-demi: 0.13.11(vue@3.3.4)
     dev: false
 
-  /vue-echarts@6.5.5(echarts@5.4.2)(vue@3.3.4):
-    resolution: {integrity: sha512-KJD1MSyoMQ33q8M4hM45OYeSC+t7LzesIXQOrkRSXv4xhOi0iN+6yEjQuIuqRB9zZGCT2J4bK3eQ+1ttdz4Uag==}
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.5
-      echarts: ^5.4.1
-      vue: ^2.6.12 || ^3.1.1
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      echarts: 5.4.2
-      resize-detector: 0.3.0
-      vue: 3.3.4
-      vue-demi: 0.13.11(vue@3.3.4)
-    dev: false
-
   /vue-eslint-parser@9.3.1(eslint@8.45.0):
     resolution: {integrity: sha512-Clr85iD2XFZ3lJ52/ppmUDG/spxQu6+MAeHXjjyI4I1NUYZ9xmenQp4N0oaHJhrA8OOxltCVxMRfANGa70vU0g==}
     engines: {node: ^14.17.0 || >=16.0.0}
@@ -6058,12 +6035,6 @@ packages:
 
   /zrender@5.4.1:
     resolution: {integrity: sha512-M4Z05BHWtajY2241EmMPHglDQAJ1UyHQcYsxDNzD9XLSkPDqMq4bB28v9Pb4mvHnVQ0GxyTklZ/69xCFP6RXBA==}
-    dependencies:
-      tslib: 2.3.0
-    dev: false
-
-  /zrender@5.4.3:
-    resolution: {integrity: sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==}
     dependencies:
       tslib: 2.3.0
     dev: false
