@@ -173,8 +173,8 @@ importers:
         specifier: ^1.11.5
         version: 1.11.7
       echarts:
-        specifier: ^5.4.2
-        version: 5.4.2
+        specifier: 5.4.1
+        version: 5.4.1
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -185,8 +185,8 @@ importers:
         specifier: ^3.3.4
         version: 3.3.4
       vue-echarts:
-        specifier: ^6.5.5
-        version: 6.5.5(echarts@5.4.2)(vue@3.3.4)
+        specifier: 6.5.2
+        version: 6.5.2(echarts@5.4.1)(vue@3.3.4)
     devDependencies:
       '@types/lodash-es':
         specifier: ^4.17.7
@@ -2797,6 +2797,13 @@ packages:
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
+
+  /echarts@5.4.1:
+    resolution: {integrity: sha512-9ltS3M2JB0w2EhcYjCdmtrJ+6haZcW6acBolMGIuf01Hql1yrIV01L1aRj7jsaaIULJslEP9Z3vKlEmnJaWJVQ==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.4.1
+    dev: false
 
   /echarts@5.4.2:
     resolution: {integrity: sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==}
@@ -5801,6 +5808,23 @@ packages:
       vue: 3.3.4
     dev: false
 
+  /vue-echarts@6.5.2(echarts@5.4.1)(vue@3.3.4):
+    resolution: {integrity: sha512-8NCVTX6aGCR2VPxm4P/Nm3k4sx1rsocCTTf4m0C9d3Q17WgXxB2tcYixQYV0tQNY1f16Z3yS6iLlmc8zV0j/kg==}
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.5
+      echarts: ^5.4.1
+      vue: ^2.6.12 || ^3.1.1
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      echarts: 5.4.1
+      resize-detector: 0.3.0
+      vue: 3.3.4
+      vue-demi: 0.13.11(vue@3.3.4)
+    dev: false
+
   /vue-echarts@6.5.5(echarts@5.4.2)(vue@3.3.4):
     resolution: {integrity: sha512-KJD1MSyoMQ33q8M4hM45OYeSC+t7LzesIXQOrkRSXv4xhOi0iN+6yEjQuIuqRB9zZGCT2J4bK3eQ+1ttdz4Uag==}
     requiresBuild: true
@@ -6031,6 +6055,12 @@ packages:
     optionalDependencies:
       commander: 9.5.0
     dev: true
+
+  /zrender@5.4.1:
+    resolution: {integrity: sha512-M4Z05BHWtajY2241EmMPHglDQAJ1UyHQcYsxDNzD9XLSkPDqMq4bB28v9Pb4mvHnVQ0GxyTklZ/69xCFP6RXBA==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false
 
   /zrender@5.4.3:
     resolution: {integrity: sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==}

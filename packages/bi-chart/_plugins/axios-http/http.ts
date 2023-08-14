@@ -16,6 +16,8 @@ export type RequestInterceptors = (
   args: InternalAxiosRequestConfig
 ) => InternalAxiosRequestConfig
 
+export type RequestMethod = 'postJson' | 'get' | 'post' | 'postForm'
+
 export default class AxiosHttp {
   private readonly axiosInstance: AxiosInstance
 
@@ -72,10 +74,10 @@ export default class AxiosHttp {
     config: AxiosRequestConfig = {}
   ) {
     config = {
-      ...config,
       url,
       params,
-      method: 'GET'
+      method: 'GET',
+      ...config
     }
     return this.request<T>(config)
   }
