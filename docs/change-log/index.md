@@ -1,3 +1,9 @@
+## [0.0.34](https://github.com/dizuncainiao/bi-chart/compare/v0.0.33...v0.0.34) (2023-08-15)
+
+### 🚀 Performance Improvements
+
+- 🚀 wipeOptionData 去除 “保留一条 series” ([874cf4f](https://github.com/dizuncainiao/bi-chart/commit/874cf4f))
+
 ## [0.0.33](https://github.com/dizuncainiao/bi-chart/compare/v0.0.30...v0.0.33) (2023-08-14)
 
 ### ✨ Features
