@@ -1,3 +1,9 @@
+## [0.0.35](https://github.com/dizuncainiao/bi-chart/compare/v0.0.34...v0.0.35) (2023-08-15)
+
+### 🚀 Performance Improvements
+
+- 🚀 优化 CrmConversionRateAnalysis 图表 options 赋值 ([461e008](https://github.com/dizuncainiao/bi-chart/commit/461e008))
+
 ## [0.0.34](https://github.com/dizuncainiao/bi-chart/compare/v0.0.33...v0.0.34) (2023-08-15)
 
 ### 🚀 Performance Improvements
