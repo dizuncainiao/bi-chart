@@ -1,7 +1,7 @@
 <template>
   <BasicBusinessLayout
     title="转化率分析"
-    chart-type="basicLine"
+    chart-type="basicLineStack"
     url="/pscrm-rest/crmReport/getConvertRateReportData"
     method="get"
     :params="params"
@@ -30,7 +30,7 @@
   </BasicBusinessLayout>
 </template>
 <script lang="ts">
-import { defineComponent, ref, computed, watch } from 'vue'
+import { defineComponent, ref, watch } from 'vue'
 import { getDateText } from '../../basic-business/hooks/date'
 import BasicBusinessLayout from '../../basic-business/BasicBusinessLayout.vue'
 import DepSelect from '../../basic-business/dep-select/DepSelect.vue'
@@ -74,36 +74,24 @@ export default defineComponent({
       }
     )
 
-    const dateText = computed(() => getDateText(params.value))
-
     function setOption(data, option) {
       const series = [
         {
           name: '线索转客户数',
-          type: 'line',
-          symbolSize: 6, // 折线点的大小
-          stack: 'Total',
-          data: data.clueConvertCustomerList || [] // 线索转客户
+          data: data?.clueConvertCustomerList || [] // 线索转客户
         },
         {
           name: '客户转商机数',
-          type: 'line',
-          symbolSize: 6, // 折线点的大小
-          stack: 'Total',
-          data: data.customerConvertBusinessList || [] // 客户转商机
+          data: data?.customerConvertBusinessList || [] // 客户转商机
         }
       ]
 
-      option.xAxis.data = data.dataList || []
-      option.series = series
-
-      console.log(option, 'option')
-      console.log(data, 'data')
+      option.xAxis.data = data?.dataList || []
+      Object.assign(option.series, series)
     }
 
     return {
       params,
-      dateText,
       getDateText,
       setOption
     }
