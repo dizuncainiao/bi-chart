@@ -11,7 +11,7 @@ export function wipeOptionData(options: any) {
   const option = cloneDeep(options)
   if (Array.isArray(option.series)) {
     // 保留一条 series（防止预设的配置被缓存了 legend 等数据）
-    option.series = option.series.slice(0, 1)
+    // option.series = option.series.slice(0, 1)
     option.series.forEach((item: any) => {
       item.data = []
       item.name = ''
