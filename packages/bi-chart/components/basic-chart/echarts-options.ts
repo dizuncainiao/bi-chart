@@ -22,7 +22,19 @@ export function wipeOptionData(options: any) {
     option.series.data = []
     option.series.name = ''
   }
+
+  wipeCategoryData(option)
+
   return option
+}
+
+// 清空图表的类目数据
+export function wipeCategoryData(option: any) {
+  if (option.xAxis?.type === 'category') {
+    option.xAxis.data = []
+  } else if (option.yAxis?.type === 'category') {
+    option.yAxis.data = []
+  }
 }
 
 export function getChartOption(type: ChartType) {

@@ -11,7 +11,7 @@ if command -v jq >/dev/null 2>&1; then
   echo $PKG_NAME
   echo $PKG_VERSION
 
-  curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key='$TEST_ROBOT_WB \
+  curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key='$FRONT_END_MICRO_SERVICES_GROUP \
        -H 'Content-Type: application/json' \
        -d '
        {
@@ -37,7 +37,7 @@ else
   echo $PKG_NAME
   echo $PKG_VERSION
 
-  curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key='$TEST_ROBOT_WB \
+  curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key='$FRONT_END_MICRO_SERVICES_GROUP \
        -H 'Content-Type: application/json' \
        -d '
        {
