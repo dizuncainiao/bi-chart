@@ -1,3 +1,9 @@
+## [0.0.36](https://github.com/dizuncainiao/bi-chart/compare/v0.0.35...v0.0.36) (2023-09-01)
+
+### 🐛 Bug Fixes
+
+- 🐛 移除 x、y 轴默认的类目数据 ([0df4993](https://github.com/dizuncainiao/bi-chart/commit/0df4993))
+
 ## [0.0.35](https://github.com/dizuncainiao/bi-chart/compare/v0.0.34...v0.0.35) (2023-08-15)
 
 ### 🚀 Performance Improvements
