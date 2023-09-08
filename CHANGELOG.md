@@ -1,3 +1,9 @@
+## [0.0.37](https://github.com/dizuncainiao/bi-chart/compare/v0.0.36...v0.0.37) (2023-09-08)
+
+### ✨ Features
+
+- ✨ 增加“我的账户小报表”组件 ([a77f170](https://github.com/dizuncainiao/bi-chart/commit/a77f170))
+
 ## [0.0.36](https://github.com/dizuncainiao/bi-chart/compare/v0.0.35...v0.0.36) (2023-09-01)
 
 ### 🐛 Bug Fixes
