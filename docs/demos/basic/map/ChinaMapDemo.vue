@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BasicChart, allEchartsOptions } from 'dz-bi-chart'
+import { BasicChart, allEChartsOptions } from 'dz-bi-chart'
 
 defineOptions({
   name: 'BasicBarDemo'
@@ -16,6 +16,6 @@ defineOptions({
       box-shadow: 0 0 8px #eee;
 "
   >
-    <BasicChart :options="allEchartsOptions.chinaMap" />
+    <BasicChart :options="allEChartsOptions.chinaMap" />
   </div>
 </template>

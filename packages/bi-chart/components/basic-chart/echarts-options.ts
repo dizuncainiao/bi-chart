@@ -1,8 +1,8 @@
 import { cloneDeep } from 'lodash-es'
 import { ref } from 'vue'
-import * as allEchartsOptions from './chart-option'
+import * as allEChartsOptions from './chart-option'
 
-export type AllChartOptions = typeof allEchartsOptions
+export type AllChartOptions = typeof allEChartsOptions
 
 export type ChartType = keyof AllChartOptions
 
@@ -38,8 +38,8 @@ export function wipeCategoryData(option: any) {
 }
 
 export function getChartOption(type: ChartType) {
-  const option = wipeOptionData(Reflect.get(allEchartsOptions, type))
+  const option = wipeOptionData(Reflect.get(allEChartsOptions, type))
   return ref(option)
 }
 
-export default allEchartsOptions
+export default allEChartsOptions
