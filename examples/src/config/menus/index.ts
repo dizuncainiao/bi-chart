@@ -13,6 +13,11 @@ export const menuData = [
         title: '小报表布局',
         routeName: 'BasicSmallLayoutDemo',
         showItem: true
+      },
+      {
+        title: '我的账户小报表布局',
+        routeName: 'BasicAccountLayoutDemo',
+        showItem: true
       }
     ]
   },

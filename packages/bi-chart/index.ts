@@ -17,6 +17,7 @@ export { default as CrmCustomerStageFunnel } from './components/business/crm-cus
 export {
   default as BasicBusinessLayout,
   BasicSmallLayout,
+  BasicAccountLayout,
   DepSelect,
   DateSelect
 } from './components/basic-business'

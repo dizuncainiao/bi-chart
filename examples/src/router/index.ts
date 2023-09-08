@@ -18,6 +18,11 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/layout/BasicSmallLayoutDemo.vue')
   },
   {
+    path: '/basic-account-layout-demo',
+    name: 'BasicAccountLayoutDemo',
+    component: () => import('@/views/layout/BasicAccountLayoutDemo.vue')
+  },
+  {
     path: '/things-outbound-number-ranking-demo',
     name: 'ThingsOutboundNumberRankingDemo',
     component: () =>
