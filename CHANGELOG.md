@@ -1,3 +1,9 @@
+## [0.0.38](https://github.com/dizuncainiao/bi-chart/compare/v0.0.37...v0.0.38) (2023-11-04)
+
+### ✨ Features
+
+- ✨ 提供 initResponseInterceptors 功能（项目中可以执行响应拦截） ([8436094](https://github.com/dizuncainiao/bi-chart/commit/8436094))
+
 ## [0.0.37](https://github.com/dizuncainiao/bi-chart/compare/v0.0.36...v0.0.37) (2023-09-08)
 
 ### ✨ Features
