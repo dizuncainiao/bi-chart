@@ -1,7 +1,8 @@
 import axios, {
   AxiosRequestConfig,
   AxiosInstance,
-  InternalAxiosRequestConfig
+  InternalAxiosRequestConfig,
+  AxiosResponse
 } from 'axios'
 import { CreateAxiosDefaults } from 'axios'
 import qs from 'qs'
@@ -16,7 +17,19 @@ export type RequestInterceptors = (
   args: InternalAxiosRequestConfig
 ) => InternalAxiosRequestConfig
 
+export type ResponseInterceptors = (arg: AxiosResponse) => AxiosResponse
+
 export type RequestMethod = 'postJson' | 'get' | 'post' | 'postForm'
+
+function defaultResponseInterceptors(config: AxiosResponse) {
+  // 状态 200 且 data 正常有值
+  if (config.status === 200 && config.data) {
+    // config 作为接口的返回数据，可以根据后端接口数据的状态码继续细分 resolve reject
+    return Promise.resolve(config)
+  } else {
+    return Promise.reject(`${config.statusText}: Bad Request!`)
+  }
+}
 
 export default class AxiosHttp {
   private readonly axiosInstance: AxiosInstance
@@ -36,6 +49,15 @@ export default class AxiosHttp {
         return Promise.reject(error)
       }
     )
+  }
+
+  responseInterceptors(callback?: ResponseInterceptors) {
+    this.axiosInstance.interceptors.response.use(config => {
+      if (typeof callback === 'function') {
+        return callback(config)
+      }
+      return defaultResponseInterceptors(config)
+    })
   }
 
   private initInterceptors() {

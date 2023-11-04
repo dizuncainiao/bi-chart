@@ -1,4 +1,4 @@
-import AxiosHttp, { RequestInterceptors } from './http'
+import AxiosHttp, { RequestInterceptors, ResponseInterceptors } from './http'
 
 const http = new AxiosHttp({
   baseURL: '',
@@ -7,6 +7,11 @@ const http = new AxiosHttp({
 
 export const initRequestInterceptors = (callback: RequestInterceptors) => {
   http.requestInterceptors(callback)
+}
+
+// 外部 callback 至少具备 defaultResponseInterceptors 函数的基本功能
+export const initResponseInterceptors = (callback?: ResponseInterceptors) => {
+  http.responseInterceptors(callback)
 }
 
 export default http
