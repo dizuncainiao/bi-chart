@@ -27,4 +27,7 @@ export { default as BasicChart } from './components/basic-chart'
 export { default as allEChartsOptions } from './components/basic-chart/echarts-options'
 
 // 请求拦截器
-export { initRequestInterceptors } from './_plugins/axios-http'
+export {
+  initRequestInterceptors,
+  initResponseInterceptors
+} from './_plugins/axios-http'
