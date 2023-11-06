@@ -1,3 +1,9 @@
+## [0.0.39](https://github.com/dizuncainiao/bi-chart/compare/v0.0.38...v0.0.39) (2023-11-06)
+
+### ✨ Features
+
+- ✨ 暴露 initResponseInterceptors ([6ad6f2d](https://github.com/dizuncainiao/bi-chart/commit/6ad6f2d))
+
 ## [0.0.38](https://github.com/dizuncainiao/bi-chart/compare/v0.0.37...v0.0.38) (2023-11-04)
 
 ### ✨ Features
