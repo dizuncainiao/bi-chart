@@ -29,5 +29,6 @@ export { default as allEChartsOptions } from './components/basic-chart/echarts-o
 // 请求拦截器
 export {
   initRequestInterceptors,
-  initResponseInterceptors
+  initResponseInterceptors,
+  default as http
 } from './_plugins/axios-http'
