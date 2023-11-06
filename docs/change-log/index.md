@@ -1,3 +1,9 @@
+## [0.0.40](https://github.com/dizuncainiao/bi-chart/compare/v0.0.39...v0.0.40) (2023-11-06)
+
+### ✨ Features
+
+- ✨ 暴露 http 实例 ([d3f6c09](https://github.com/dizuncainiao/bi-chart/commit/d3f6c09))
+
 ## [0.0.39](https://github.com/dizuncainiao/bi-chart/compare/v0.0.38...v0.0.39) (2023-11-06)
 
 ### ✨ Features
