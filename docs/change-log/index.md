@@ -1,3 +1,9 @@
+## [0.0.41](https://github.com/dizuncainiao/bi-chart/compare/v0.0.40...v0.0.41) (2024-03-22)
+
+### ✨ Features
+
+- ✨ 云客查图表 ([063ab7c](https://github.com/dizuncainiao/bi-chart/commit/063ab7c))
+
 ## [0.0.40](https://github.com/dizuncainiao/bi-chart/compare/v0.0.39...v0.0.40) (2023-11-06)
 
 ### ✨ Features
