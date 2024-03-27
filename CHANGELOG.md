@@ -1,3 +1,9 @@
+## [0.0.42](https://github.com/dizuncainiao/bi-chart/compare/v0.0.41...v0.0.42) (2024-03-27)
+
+### ✨ Features
+
+- ✨ BasicSmallLayout 组件 props 校验优化 ([1b31c8c](https://github.com/dizuncainiao/bi-chart/commit/1b31c8c))
+
 ## [0.0.41](https://github.com/dizuncainiao/bi-chart/compare/v0.0.40...v0.0.41) (2024-03-22)
 
 ### ✨ Features
