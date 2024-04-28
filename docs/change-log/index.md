@@ -1,3 +1,9 @@
+## [0.0.43](https://github.com/dizuncainiao/bi-chart/compare/v0.0.42...v0.0.43) (2024-04-28)
+
+### ✨ Features
+
+- ✨ ykc 图标联调 ([3d3930b](https://github.com/dizuncainiao/bi-chart/commit/3d3930b))
+
 ## [0.0.42](https://github.com/dizuncainiao/bi-chart/compare/v0.0.41...v0.0.42) (2024-03-27)
 
 ### ✨ Features
