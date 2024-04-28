@@ -2,7 +2,7 @@
   <BasicBusinessLayout
     title="企业解锁量排行榜"
     chart-type="basicBar"
-    url="/associate-web/callReport/callConnectedTimesRankStatistics"
+    url="/badu-expand-customer-rest/overview/queryYkcRankingListOfEnterpriseUnlockVolume"
     :params="params"
     :set-option="setOption"
   >
@@ -29,8 +29,6 @@ export default defineComponent({
     const params = ref({
       cdId: 0,
       endDate: '',
-      pageNo: 0,
-      pageSize: 0,
       startDate: '',
       depName: ''
     })
@@ -38,16 +36,9 @@ export default defineComponent({
     const dateText = computed(() => getDateText(params.value))
 
     function setOption(data, option) {
-      option.yAxis.data = data?.xaxisList || [
-        '张三',
-        '张三2',
-        '张三3',
-        '张三4',
-        '张三5',
-        '张三6',
-        '张三7'
-      ]
-      option.series[0].data = data?.dataList || [0, 60, 120, 180, 240, 360, 400]
+      console.log(data, 'lin 39')
+      option.yAxis.data = (data || []).map((item: any) => item.profileName)
+      option.series[0].data = (data || []).map((item: any) => item.unlockNum)
     }
 
     return {

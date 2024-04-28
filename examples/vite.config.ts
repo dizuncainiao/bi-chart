@@ -12,22 +12,27 @@ export default defineConfig(({ command, mode }) => {
     server: {
       proxy: {
         '/bdcloud-call-analytic': {
-          target: 'https://demo.bdsaas.cn/',
+          target: 'https://im.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         },
         '/pscrm-rest': {
-          target: 'https://demo.bdsaas.cn/',
+          target: 'https://im.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         },
         '/associate-web': {
-          target: 'https://demo.bdsaas.cn/',
+          target: 'https://im.bdsaas.cn/',
+          changeOrigin: true,
+          secure: true
+        },
+        '/badu-expand-customer-rest': {
+          target: 'https://im.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         },
         '/bdsaas': {
-          target: 'https://demo.bdsaas.cn/',
+          target: 'https://im.bdsaas.cn/',
           changeOrigin: true,
           secure: true
         }

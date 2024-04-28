@@ -2,7 +2,7 @@
   <BasicBusinessLayout
     title="线索使用统计"
     chart-type="basicLine"
-    url="/associate-web/callReport/callConnectedTimesRankStatistics"
+    url="/badu-expand-customer-rest/overview/queryYkcLeadUsageStatistics"
     :params="params"
     :set-option="setOption"
   >
@@ -38,32 +38,35 @@ export default defineComponent({
     const dateText = computed(() => getDateText(params.value))
 
     function setOption(data, option) {
-      option.xAxis.data = data?.xaxisList || [
-        '2024-03-01',
-        '2024-03-02',
-        '2024-03-03',
-        '2024-03-04',
-        '2024-03-05',
-        '2024-03-06',
-        '2024-03-07'
-      ]
+      option.xAxis.data = (data || []).map((item: any) => item.createdTime)
       option.series = [
         {
           name: '领取线索量',
           type: 'line',
-          data: [150, 230, 224, 218, 135, 147, 260]
+          data: (data || []).map((item: any) => item.receiveCount)
         },
         {
           name: '分配线索量',
           type: 'line',
-          data: [250, 130, 124, 318, 235, 247, 160]
+          data: (data || []).map((item: any) => item.allocationCount)
         },
         {
           name: '加入公海的线索量',
           type: 'line',
-          data: [450, 530, 324, 118, 335, 347, 60]
+          data: (data || []).map((item: any) => item.seaCount)
         }
       ]
+      option.dataZoom = [
+        {
+          type: 'inside'
+        },
+        {
+          type: 'slider'
+        }
+      ]
+      option.grid = {
+        bottom: 60
+      }
     }
 
     return {

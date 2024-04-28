@@ -2,7 +2,7 @@
   <BasicBusinessLayout
     title="近七日解锁量趋势"
     chart-type="basicLine"
-    url="/associate-web/callReport/callConnectedTimesRankStatistics"
+    url="/badu-expand-customer-rest/overview/queryYkcUnlockVolumeTrendInThePastSevenDays"
     :params="params"
     :set-option="setOption"
   >
@@ -38,16 +38,19 @@ export default defineComponent({
     const dateText = computed(() => getDateText(params.value))
 
     function setOption(data, option) {
-      option.xAxis.data = data?.xaxisList || [
-        '2024-03-01',
-        '2024-03-02',
-        '2024-03-03',
-        '2024-03-04',
-        '2024-03-05',
-        '2024-03-06',
-        '2024-03-07'
+      option.xAxis.data = (data || []).map(item => item.createdTime)
+      option.series[0].data = (data || []).map(item => item.unlockNum)
+      option.dataZoom = [
+        {
+          type: 'inside'
+        },
+        {
+          type: 'slider'
+        }
       ]
-      option.series[0].data = data?.dataList || [0, 60, 120, 180, 240, 360, 400]
+      option.grid = {
+        bottom: 60
+      }
     }
 
     return {

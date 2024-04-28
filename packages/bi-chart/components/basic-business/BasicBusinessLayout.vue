@@ -28,6 +28,7 @@ import BasicChart from '../basic-chart/BasicChart.vue'
 import type { PropType } from 'vue'
 import type { ChartType } from '../basic-chart/echarts-options'
 import type { RequestMethod } from '../../_plugins/axios-http/http'
+import { cloneDeep } from 'lodash-es'
 
 type SetOption = (data: any, option: any) => void
 
@@ -71,7 +72,7 @@ export default defineComponent({
     const chartOptions = getChartOption(unref(chartType))
 
     function getData() {
-      const _params = unref(params)
+      const _params = cloneDeep(unref(params))
       // 删除部门名称，避免影响请求
       Reflect.deleteProperty(_params, 'depName')
 
