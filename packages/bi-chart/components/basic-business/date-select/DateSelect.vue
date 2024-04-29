@@ -6,11 +6,16 @@
     size="small"
     @change="dateChange"
   >
-    <bn-option label="昨日" value="1" />
-    <bn-option label="近7天" value="2" />
-    <bn-option label="本周" value="3" />
-    <bn-option label="近30天" value="4" />
-    <bn-option label="本月" value="5" />
+    <template v-if="$props.onlyWeek">
+      <bn-option label="近7天" value="2" />
+    </template>
+    <template v-else>
+      <bn-option label="昨日" value="1" />
+      <bn-option label="近7天" value="2" />
+      <bn-option label="本周" value="3" />
+      <bn-option label="近30天" value="4" />
+      <bn-option label="本月" value="5" />
+    </template>
   </bn-select>
 </template>
 
@@ -31,6 +36,11 @@ export default defineComponent({
     params: {
       type: Object as PropType<Record<string, any>>,
       required: true
+    },
+    onlyWeek: {
+      type: Boolean,
+      default: false,
+      required: false
     }
   },
   emits: ['update:params'],
@@ -44,6 +54,11 @@ export default defineComponent({
       startDate: yesterday,
       endDate: today
     })
+
+    if (props.onlyWeek) {
+      state.date = '2'
+      dateChange(state.date)
+    }
 
     function dateChange(val: OptionDataKeys) {
       state.startDate = optionDate[val]

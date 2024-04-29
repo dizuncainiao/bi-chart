@@ -10,7 +10,7 @@
     <template #form>
       <DepSelect v-model:params="params" />
 
-      <DateSelect v-model:params="params" />
+      <DateSelect v-model:params="params" only-week />
     </template>
   </BasicBusinessLayout>
 </template>
