@@ -1,3 +1,9 @@
+## [0.0.44](https://github.com/dizuncainiao/bi-chart/compare/v0.0.43...v0.0.44) (2024-04-29)
+
+### ✨ Features
+
+- ✨ only-week 功能 ([0a2dc59](https://github.com/dizuncainiao/bi-chart/commit/0a2dc59))
+
 ## [0.0.43](https://github.com/dizuncainiao/bi-chart/compare/v0.0.42...v0.0.43) (2024-04-28)
 
 ### ✨ Features
