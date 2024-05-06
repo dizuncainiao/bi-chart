@@ -29,6 +29,7 @@
   font-weight: 600;
   line-height: 16px;
   color: #242934;
+  white-space: nowrap;
 }
 
 .bi-chart-layout .bi-chart-header .l-box .info {
@@ -37,6 +38,7 @@
   font-weight: 400;
   line-height: 14px;
   color: #9ca6b9;
+  white-space: nowrap;
 }
 
 .bi-chart-layout .bi-chart-header .r-box {
