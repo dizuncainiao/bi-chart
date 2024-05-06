@@ -1,3 +1,9 @@
+## [0.0.45](https://github.com/dizuncainiao/bi-chart/compare/v0.0.44...v0.0.45) (2024-05-06)
+
+### ✨ Features
+
+- ✨ 样式优化 ([5eab4dc](https://github.com/dizuncainiao/bi-chart/commit/5eab4dc))
+
 ## [0.0.44](https://github.com/dizuncainiao/bi-chart/compare/v0.0.43...v0.0.44) (2024-04-29)
 
 ### ✨ Features
