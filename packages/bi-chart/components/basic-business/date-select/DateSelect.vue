@@ -1,6 +1,6 @@
 <template>
   <bn-select
-    style="width: 95px;"
+    style="width: 96px;"
     v-model="state.date"
     placeholder="选择时间"
     size="small"

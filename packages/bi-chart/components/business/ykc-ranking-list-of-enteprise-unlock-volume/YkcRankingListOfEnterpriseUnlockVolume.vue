@@ -6,7 +6,7 @@
     :params="params"
     :set-option="setOption"
   >
-    <template #info>{{ dateText }} | {{ params.depName }}</template>
+    <template #info><!--{{ dateText }} | -->{{ params.depName }}</template>
     <template #form>
       <DepSelect v-model:params="params" />
 

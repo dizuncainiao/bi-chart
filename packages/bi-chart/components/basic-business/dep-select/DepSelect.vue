@@ -1,6 +1,6 @@
 <template>
   <bn-select
-    style="width: 140px;"
+    style="width: 96px;"
     v-model="state.cdId"
     placeholder="选择部门"
     size="small"
@@ -61,7 +61,7 @@ export default defineComponent({
       const topLevelIndex = depList.findIndex((item: any) => item.pId == 0)
 
       if (topLevelIndex > -1) {
-        depList[topLevelIndex].name = '全部'
+        depList[topLevelIndex].name = '全公司'
         depList[topLevelIndex].id = 0
       }
 
