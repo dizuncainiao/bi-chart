@@ -1,3 +1,9 @@
+## [0.0.46](https://github.com/dizuncainiao/bi-chart/compare/v0.0.45...v0.0.46) (2024-05-08)
+
+### ✨ Features
+
+- ✨ 隐藏时间、宽度调整 ([63724b1](https://github.com/dizuncainiao/bi-chart/commit/63724b1))
+
 ## [0.0.45](https://github.com/dizuncainiao/bi-chart/compare/v0.0.44...v0.0.45) (2024-05-06)
 
 ### ✨ Features
