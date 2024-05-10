@@ -1,3 +1,9 @@
+## [0.0.47](https://github.com/dizuncainiao/bi-chart/compare/v0.0.46...v0.0.47) (2024-05-10)
+
+### ✨ Features
+
+- ✨ 小报表 value 统一加粗 ([3763f77](https://github.com/dizuncainiao/bi-chart/commit/3763f77))
+
 ## [0.0.46](https://github.com/dizuncainiao/bi-chart/compare/v0.0.45...v0.0.46) (2024-05-08)
 
 ### ✨ Features
