@@ -1,3 +1,9 @@
+## [0.0.48](https://github.com/dizuncainiao/bi-chart/compare/v0.0.47...v0.0.48) (2024-05-15)
+
+### ✨ Features
+
+- ✨ 使图表标题换行 ([d856945](https://github.com/dizuncainiao/bi-chart/commit/d856945))
+
 ## [0.0.47](https://github.com/dizuncainiao/bi-chart/compare/v0.0.46...v0.0.47) (2024-05-10)
 
 ### ✨ Features
